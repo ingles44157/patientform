@@ -1,0 +1,1221 @@
+@charset "UTF-8";
+
+body{
+    background: #eceff1 !important;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.labelb6{
+    float:left;
+    margin:6px 0px;
+}
+
+.labelb7{
+    float:left;
+    margin:7px 0px;
+}
+
+.labelb8{
+    float:left;
+    margin:8px 0px;
+}
+
+.mainDiv {
+    float: left;
+    height: calc(100vh - 0px);
+    padding: 20px;
+    width: 100%;
+}
+
+.leftSection {
+    float: left;
+    width: 30%;
+}
+
+.patientProfile{
+    background: #ffffff none repeat scroll 0 0;
+    border-radius: 3px;
+    float: left;
+    padding: 10px;
+    width: calc(100% - 0px) !important;
+    border:1px solid #ddd;
+}
+
+.profilePicture {
+    cursor: pointer;
+    float: left;
+    height: 65px;
+    width: 65px;
+}
+
+.profilePicture img{
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+
+.patientDtl {
+    border-bottom: 1px solid #eeeeee;
+    margin-left: 20px;
+    padding-bottom: 8px;
+    padding-top: 3px;
+    width: calc(100% - 85px);
+}
+
+.patientName {
+    box-sizing: border-box;
+    color: #000 !important;
+    font-size: 18px;
+    line-height: 18px;
+    max-width: calc(100% - 100px);
+}
+
+.mrnNO{
+    color: #4f4f4f;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+.patientAge {
+    color: #777;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.iconGrey {
+    color: #999;
+    font-size: 15px !important;
+    line-height: 12px !important;
+    margin-right: 8px;
+}
+
+.labelContent{
+
+}
+
+.detailsContent{
+    color:#777;
+}
+
+.details_cart {
+    border: 1px solid #efefef;
+    border-radius: 15px;
+    color: #777;
+    float: left;
+    font-size: 11px;
+    height: 25px;
+    line-height: 27px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    padding: 0 5px;
+    text-align: center;
+    width: calc(25% - 3px);
+    font-weight: 700;
+}
+
+.btnCommonSmall {
+    background: #5cb85c none repeat scroll 0 0;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-size: 10px;
+    height: 25px;
+    line-height: 27px;
+    margin-left: 7.5px;
+    padding: 0 15px;
+}
+
+.btnCommonSmall:hover{
+    background: #4caf50;
+}
+
+.btnSeparator {
+    border-left: 1px solid #fff;
+    height: 25px;
+    margin-left: 7.5px;
+    padding-left: 7.5px;
+}
+
+.invDtlDivOuter {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0 0 #ccc;
+    line-height: 18px;
+    margin-bottom: 5px;
+    min-height: 50px;
+    padding: 5px 10px;
+    width: 100%;
+    cursor:pointer;
+}
+
+.invDtlDivOuterActive {
+    background: #e8f5e9 none repeat scroll 0 0;
+    border: 1px solid #b5d3b6;
+}
+
+.reasonLabel{
+    color:#1e88e5;
+    font-weight: 500;
+}
+
+.invDtlDivOuter span{
+    margin-right:5px;
+}
+
+.rightSection {
+    float: left;
+    width: 70%;
+    padding: 0 20px 0 40px;
+}
+
+.slideMiddleMain {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+}
+
+.gallery-cell {
+    height: calc(100vh - 35px);
+    width: calc(100% - -10px);
+}
+
+.cardSection {
+    height: calc(100vh - 35px);
+    position: relative;
+    width: calc(100% - 0px);
+}
+
+.sec_outer_header {
+    border-bottom: 1px solid #eee;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 10px;
+    padding-left: 20px;
+    width:100%;
+    min-height:50px;
+}
+
+.col-headerInv{
+    border-bottom: 1px solid #ccc;
+    padding: 8px 5px;
+    background: #fbfbfb none repeat scroll 0 0;
+    color: #000;
+    font-weight: bold;
+}
+
+.secTopAfterHed{
+    border-bottom: 1px solid #eee;
+    padding: 10px 10px 0 20px;
+}
+
+.rowDivList{
+    width: 90px;
+}
+
+.breadCrumbLabel {
+    color: #999;
+    display: inline-block;
+    float: none !important;
+    font-size: 14px !important;
+    padding: 7.5px 0px;
+}
+
+.breadCrumbLabelActive {
+    color: #1e88e5;
+}
+
+.breadCrumbAngle {
+    color: #ccc !important;
+    font-size: 18px !important;
+    font-weight: 100 !important;
+    line-height: 12px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    overflow: hidden;
+}
+
+.addBtn {
+    background: #5cb85c none repeat scroll 0 0;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+    padding: 7.5px 15px;
+}
+
+.addBtn span {
+    color: #fff !important;
+    font-size: 10px !important;
+    margin-right: 5px;
+}
+
+.addBtn:hover{
+    background: #4caf50;
+}
+
+.dBoxSmall {
+    background: #fbfbfb none repeat scroll 0 0;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    margin: 0 10px 10px 0;
+}
+
+.dBoxHalfLeft {
+    border-right: 1px solid #e3e3e3;
+    color: #000;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    min-height: 38px;
+    min-width: 105px;
+    padding: 12px 7px;
+}
+
+.dBoxHalfLeft:hover{
+    border-radius:5px 0 0 5px;
+    background: #f5f5f5;
+}
+
+.dBoxHeader {
+    cursor: pointer;
+    padding: 7px;
+}
+
+.inputNo{
+    width:40px;
+}
+
+.inputFocus {
+    background: #FFFFFF;
+    padding: 0!important;
+    height: 25px !important;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.inputFocus:focus {
+	border: 1px solid #D4E2F4;
+	background-color: #b4e6a2;
+}
+
+/*select option*/
+.selectOptionDB select {
+	-moz-font-feature-settings: inherit;
+    -moz-font-language-override: inherit;
+    background: #ffffff;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    font-size-adjust: inherit;
+    font-stretch: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: normal !important;
+    line-height: 1.2;
+    margin: 0;
+    outline: 0;
+    border: 1px solid #cccccc;
+    color: #000;
+    height:25px;
+    text-indent: 0px;
+}
+
+.selectOptionDB option{
+	padding:5px;
+}
+
+.selectOptionDB {
+	position:relative;
+	float:left;
+}
+
+.selectOptionDB:before {
+    -moz-appearance: none;
+    background: #f5f5f5 none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    color: #777;
+    content: "\f107";
+    display: block;
+    font-family: FontAwesome;
+    font-size: 14px;
+    height: 23px;
+    line-height: 23px;
+    width: 25px;
+    pointer-events: none;
+    position: absolute;
+    right: 0 !important;
+    top: 0 !important;
+    text-align: center;
+}
+/*select option*/
+
+.selectDM{
+    width:85px;
+}
+
+.Dis_DIV{
+    background: #eceff1 none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #000;
+    display: block;
+    padding: 10px;
+    position: absolute;
+    margin-top: 40px;
+    width: 500px;
+    z-index: 9999;
+}
+
+.DB_Coll{
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 130px;
+}
+
+.innerDIVDB{
+    margin-bottom: 5px;
+    width: calc(100% - 130px);
+}
+
+.labelb5r10{
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.listLeftSection {
+    border: 1px solid #ccc;
+    min-height: calc(100vh - 257px);
+}
+
+.listRightSection{
+    border: 1px solid #ccc;
+    min-height: calc(100vh - 257px);
+}
+
+.scrollContentlist {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #edeff0;
+    color: #444;
+    display: block;
+    line-height: 1.6;
+    padding: 0 !important;
+}
+
+.inputBoxSection {
+    background: #f5f5f5 none repeat scroll 0 0;
+    border-bottom: 1px solid #dedede;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.inputBoxInner {
+    width: calc(100% - 25px);
+}
+
+.inputBoxInner input {
+    width: 100%;
+}
+
+.inputAddIcon {
+    border: 1px solid #ccc;
+    color: #555;
+    font-size: 10px !important;
+    height: 25px;
+    line-height: 25px !important;
+    margin-left: -1px;
+    padding: 0 8px;
+}
+
+.symptomsDB{
+    padding-left: 10px;
+    width: calc(100% - 70px) !important;
+}
+
+.editBtnList {
+    background: #1e88e5 none repeat scroll 0 0;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 10px;
+    height: 15px;
+    line-height: 15px !important;
+    margin-right: 10px;
+    padding: 0 !important;
+    text-align: center;
+    width: 27px;
+}
+
+.addBtnList {
+    background: #1e88e5 none repeat scroll 0 0;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 10px !important;
+    height: 20px;
+    line-height: 20px !important;
+    padding: 0 !important;
+    text-align: center;
+    width: 32px;
+    margin-right:10px;
+}
+
+.addBtnList:hover{
+    background: #0e78d5;
+}
+
+.btnFooter {
+    bottom: 0px;
+    padding: 10px 10px 5px 20px;
+    position: absolute;
+    width: calc(100% - 0px);
+}
+
+.btnCommon {
+    background: #1E88E5 none repeat scroll 0 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    padding: 8px 20px;
+    cursor:pointer;
+    float:left;
+}
+
+.btnCommon:hover{
+    background: #0e78d5 none repeat scroll 0 0;
+}
+
+.DBp8{
+    padding: 8px 0px;
+    font-weight: 600;
+}
+
+.Addbtn{
+    border-radius: 50%;
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    height: 22px;
+    padding: 5px 7px;
+    text-align: center;
+    width: 22px;
+}
+
+.modalOverlayDIV{
+    background: rgba(11, 11, 11, 0.2) linear-gradient(rgba(11, 11, 11, 0.1), rgba(11, 11, 11, 0.6)) repeat-x scroll;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.resScreenWide{
+    margin-right: 3px;
+}
+
+.patientReportHistory {
+    background-color: #fff;
+    border: 3px solid #f1f1f1;
+    box-shadow: 1px 1px 5px #ccc;
+    display: none;
+    height: 198px;
+    margin: 5px 1px;
+    min-height: 329px;
+    position: absolute;
+    width: 390px;
+}
+
+.Pop_Up_DIV{
+    background: #fff none repeat scroll 0 0;
+    left: 93.5px;
+    min-height: 240px;
+    opacity: 1;
+    position: fixed;
+    right: 0;
+    top: 210px;
+    width: 700px;
+    z-index: 9999;
+}
+
+.reason_txt {
+    color: #000 !important;
+    font-size: 17px !important;
+    font-weight: bold !important;
+}
+
+.topLabel {
+    color: #999;
+    font-size: 18px;
+    width:  calc(100% - 250px);
+}
+
+.focusTextArea:focus {
+    border: 1px solid #95c7ff;
+    box-shadow: 0 0 3px 0 #5e97ff;
+}
+
+.textareaDB{
+    height: calc(100vh - 137px);
+    padding: 10px 10px 10px 20px;
+}
+
+.textDB{
+    -moz-user-select: text !important;
+    height: calc(100vh - 165px);
+    width: 100% !important;
+}
+
+.deselectedBtnFlag {
+    background: #d3d3d3 none repeat scroll 0 0;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+    margin-right: 5px;
+    padding: 7.5px 15px;
+}
+
+.deselectedBtnFlag:hover{
+    background: #cacaca;
+}
+
+.selectedBtnFlag {
+    background: #5cb85c none repeat scroll 0 0;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+    margin-right: 5px;
+    padding: 7.5px 15px;
+}
+
+.selectedBtnFlag:hover{
+    background: #4caf50;
+}
+
+.addNewButton{
+    background: #1e88e5;
+    color: #fff;
+    padding: 7.5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.addNewButton:hover{
+    background: #0e78d5;
+}
+
+.addNewSectionButton {
+    background: #1e88e5 none repeat scroll 0 0;
+    border-radius: 5px;
+    bottom: -7px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 8px;
+    position: absolute;
+    right: -5px;
+}
+
+.addNewSectionButton:hover{
+    background: #0e78d5;
+}
+
+.valueDD {
+    background: #fafafa none repeat scroll 0 0;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    height: 28px;
+    min-width: 60px;
+    padding: 0 0 0 7px;
+    margin-right: 5px;
+}
+
+.valueDD input {
+    border: 0 none;
+    height: 26px;
+    width: 35px;
+    background:none;
+}
+
+.faArrow {
+    cursor: pointer;
+    float: right;
+    font-size: 15px;
+    padding: 5.5px 8px;
+    border-left:1px solid #dedede;
+    color:#777;
+}
+
+.faArrow:hover{
+    background:#eee;
+}
+
+.dBoxHalfMiddle{
+    padding: 12px 7px;
+    cursor:pointer;
+}
+
+.dBoxHalfRight:hover{
+    border-radius:0 5px 5px 0;
+}
+
+.hover:hover{
+    background: #f5f5f5;
+}
+
+.eyeSpanInActive{
+    color:#999;
+}
+
+.eyeSpanActive{
+    color:#1e88e5;
+}
+
+.eyeIcon{
+    margin-left:5px;
+}
+
+.tableSection {
+    border: 1px solid #ccc;
+    float: left;
+    min-height: calc(100vh - 266px);
+    width: 100%;
+}
+
+.tableHeader {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #f1f1f1;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+    padding: 5px 0;
+    width: 100%;
+    float:left;
+}
+
+.tableRowDiv{
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #edeff0;
+    padding: 5px 0;
+    width: 100%;
+    float:left;
+}
+
+/* UI Date Picker */
+
+.ui-widget.ui-widget-content {
+    border: 1px solid #c5c5c5;
+}
+
+.ui-datepicker {
+    display: none;
+    left: 1000px !important;
+    padding: 0.2em 0.2em 0;
+    top: 235.4px !important;
+    width: 15em;
+}
+
+.ui-corner-all{
+    border-radius: 3px;
+}
+
+.ui-widget-content {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #dddddd;
+    color: #333333;
+}
+
+.ui-widget-header {
+    background: #e9e9e9 none repeat scroll 0 0;
+    border: 1px solid #dddddd;
+    color: #333333;
+    font-weight: bold;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    padding: 0.2em 0;
+    position: relative;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    left: 2px;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    height: 1.8em;
+    position: absolute;
+    top: 2px;
+    width: 1.8em;
+}
+
+.ui-widget-header a {
+    color: #333333;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+    left: 2px;
+}
+
+.ui-datepicker .ui-datepicker-next {
+    right: 10px;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    line-height: 1.8em;
+    margin: 0 2.3em;
+    text-align: center;
+}
+
+.ui-icon-circle-triangle-w {
+   line-height: 2em;
+}
+
+.ui-icon-circle-triangle-e {
+   line-height: 2em;
+}
+
+.ui-datepicker table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    margin: 0 0 0.4em;
+    width: 100%;
+}
+
+.ui-datepicker table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+.ui-datepicker th {
+    border: 0 none;
+    font-weight: bold;
+    padding: 0.7em 0.2em;
+    text-align: center;
+}
+
+.ui-datepicker td {
+    border: 0 none;
+    padding: 1px 3px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    background: #f6f6f6 none repeat scroll 0 0;
+    border: 1px solid #c5c5c5;
+    color: #454545;
+    font-weight: normal;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+    display: block;
+    padding: 0.2em;
+    text-align: right;
+    text-decoration: none;
+}
+
+/* -- css slideDrover -- */
+.slideDrover {
+    position: absolute;
+    right: 0;
+    top:20px;
+    z-index: 999;
+}
+
+.droverBox {
+    background: #222d32 none repeat scroll 0 0;
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid #000;
+    cursor: pointer;
+    float: left;
+    height: 42px;
+    padding: 12px 8px;
+    width: 35px;
+}
+
+.thIcon {
+    color: #fff;
+    font-size: 18px !important;
+}
+
+.droverDiv {
+    background: #333e43;
+    border-radius: 0 0 0 10px;
+    float: left;
+    padding: 0px;
+    height: calc(100vh - 98px);
+}
+
+.sectionFavLib{
+    float:left;
+    width:140px;
+}
+
+.tabDivTop{
+    width: 100%;
+    float:left;
+    background:#222d32;
+}
+
+.tabDiv {
+    color: #fff;
+    float: left;
+    font-weight: bold;
+    padding: 13.5px;
+    width: 100%;
+    text-align: center;
+}
+
+.tabIcon {
+    margin-right: 8px;
+}
+
+.mainBoxSection{
+    float: left;
+    width: 100%;
+    height: calc(100vh - 140px);
+    overflow-y:auto;
+    border-top: 1px solid #101b20;
+}
+
+.boxSection {
+    float: left;
+    height: 100%;
+    padding: 0 13px;
+    width: 100%;
+}
+
+.newSlideECBreak {
+    padding: 18px 5px !important;
+}
+
+.newSlideEC:hover {
+    background: #f5f5f5 none repeat scroll 0 0;
+}
+/* -- css slideDrover -- */
+
+/* -- css slideDroverLeft -- */
+.slideDroverLeft{
+    position: absolute;
+    left: 0;
+    top:20px;
+    width: 95%;
+    z-index: 999;
+}
+
+.droverBoxLeft {
+    background: #222d32 none repeat scroll 0 0;
+    border-left: 1px solid #000;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    padding: 5px 0;
+    width: 20px;
+}
+
+.droverDivLeft{
+    background: #fff none repeat scroll 0 0;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    float: left;
+    height: calc(100vh - 35px);
+    padding: 0;
+    width: calc(100% - 20px);
+}
+
+.patientHeaderBandDB{
+    background: rgba(0, 0, 0, 0) linear-gradient(#ffffff, #eceff1) repeat scroll 0 0 !important;
+}
+/* -- css slideDroverLeft -- */
+
+
+/* -- css custom scroll bar -- */
+.sb-container{
+    position: inherit;
+    overflow: hidden;
+}
+.sb-content {
+    height:100%;
+    width: 130%;
+    padding-right: 20%;
+    overflow-y: scroll;
+    box-sizing:border-box;
+}
+.sb-scrollbar-container {
+    bottom: 5px;
+    position: absolute;
+    right: 3px;
+    top: 5px;
+    width: 5px;
+}
+.sb-container-noscroll .sb-scrollbar-container {
+    right: 0px;
+}
+.sb-scrollbar {
+    position: absolute;
+    right: 0;
+    height: 30px;
+    width: 5px;
+    border-radius: 10px;
+    background: rgba(50, 50, 50, 0.5);
+}
+.sb-scrollbar:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+/* -- css custom scroll bar -- */
+
+.chkNewDBouter {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    height: 32px;
+    line-height: 14px;
+    padding: 10px;
+    width: 40px;
+}
+
+.chkNewDB input{
+    display:none;
+}
+
+.chkNewDB input[type="checkbox"]+label {
+    background-image: url('../images/ios_check_off_inactive.png') ;
+    background-size: 30px auto;
+    background-position: 0px;
+    background-repeat: no-repeat;
+}
+
+input.chkNewDBInput[type="checkbox"]:checked+label {
+    background-image: url('../images/ios_check_on_active.png') ;
+    background-size: 30px auto;
+    background-position: 0px;
+    background-repeat: no-repeat;
+}
+
+.chkNewDBLabel {
+    box-sizing: border-box;
+    float: left;
+    height: 18px !important;
+    padding-left: 40px;
+    padding-top: 4px;
+    width: auto;
+    color:#777;
+    cursor: pointer;
+}
+
+.fancy-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.fancy-checkbox label:before {
+    border: 1px solid #bbb;
+    background:#fff;
+    color: transparent;
+    border-radius: 3px;
+    content: '\f00c';
+    font-family: "FontAwesome";
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    height: 13px;
+    width: 13px;
+    line-height: 13px;
+    margin-right: 10px;
+    padding: 1px;
+    position: relative;
+    text-align: center;
+    top: -3px;
+}
+
+.fancy-checkbox input[type="checkbox"]:checked ~ label:before {
+    border: 1px solid #1e88e5;
+    background:#1e88e5;
+    color: #fff;
+    border-radius: 3px;
+    content: '\f00c';
+    font-family: "FontAwesome";
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    height: 13px;
+    width: 13px;
+    line-height: 13px;
+    margin-right: 10px;
+    padding: 1px;
+    position: relative;
+    text-align: center;
+    top: -3px;
+}
+
+.fancy-checkboxList input[type="checkbox"] {display: none;}
+
+.fancy-checkboxList label:before {top: 0px;}
+
+.fancy-checkboxList input[type="checkbox"]:checked ~ label:before {top: 0px;}
+
+.rightDtlSec {
+    float: left;
+    width: calc(100% - 55px);
+}
+
+.fancyRadioBtn {
+    background: #5cb85c none repeat scroll 0 0;
+    border-radius: 25px;
+    float: left;
+    font-size: 0.9em;
+    padding: 2px 5px;
+}
+
+.fancyRadioBtn label {
+    float:left;
+    margin:0px;
+    overflow:auto;
+}
+
+.fancyRadioBtn label span {
+    text-align: center;
+    padding: 3px 6px;
+    display: block;
+}
+
+.fancyRadioBtn label input {
+    position:absolute;
+    top:-20px;
+    display: none;
+}
+
+.fancyRadioBtn input:checked + span {
+    background: #fff none repeat scroll 0 0;
+    color: #000;
+    height: 18px;
+    padding-top: 2px;
+}
+
+.fancyRadioBtn input:checked + span:focus {
+    background:red;
+}
+
+.fancyRadioBtn .fancyDBRadioLeft {
+    border-radius: 25px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+.fancyRadioBtn .fancyDBRadioRight {
+    border-radius: 25px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+.deleteIconList {
+    color: #aaa;
+    cursor: pointer;
+    float: right !important;
+    font-size: 16px !important;
+}
+
+.deleteIconList:hover {
+    color: #555;
+}
+
+.spanTime {
+    color: #777 !important;
+    margin-left: 5px;
+}
+
+.icoScrollLR {
+    background: #f5f5f5 none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #888;
+    cursor: pointer;
+    font-size: 18px !important;
+    height: 25px;
+    line-height: 25px !important;
+    margin-top: 2px;
+    text-align: center;
+    width: 25px;
+}
+
+.icoScrollLR:hover{
+    background: #EEEEEE;
+}
+
+.icoScrollLeft{
+    margin-right:10px;
+}
+
+.icoScrollRight{
+    margin-left:10px;
+}
+
+.breadBrumbScroll {
+    margin-top: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: calc(100% - 185px);
+}
+
+.scrollBtnOuter {
+    position: fixed;
+    right: 0;
+    top: 67px;
+    z-index: 3;
+}
+
+/* New css*/
+.tooltip_helpDIV {
+    font-size: 12px !important;
+}
+
+.caretUpDownIcon {
+    cursor: pointer;
+    text-align: center;
+    width: 18px;
+}
+
+.greyBottomBorder {
+    border-bottom: 1px solid #dedede !important;
+    padding-bottom: 2px;
+    padding-top: 4px;
+}
+
+.darkGrayLabelLabDiag {
+    color: #000000;
+    font-size: 0.9em;
+}
+
+/*New Fancy Checkbox */
+.labelIcoCustomLabDiag {
+    font-size: 13px;
+    height: 16px;
+    line-height: 15px;
+    margin-right: 7px;
+    padding: 0 1px;
+    width: 18px;
+}
+
+.chkOuterBoxLabDiag input[type="checkbox"] + label {
+    color: transparent;
+}
+
+input.labDiagInpChk[type="checkbox"]:checked + label {
+    color: #000;
+}

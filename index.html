@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="INDEX, FOLLOW, ALL" />
+    <meta name="language" content="english" />
+    <meta name="author" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Patient Form</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="fontV5/css/all.min.css" />
+    <link rel="stylesheet" href="css/mednet_2015.css" />
+    <link rel="stylesheet" href="css/dashboardNew.css" />
+    <link rel="stylesheet" href="css/flickity.css" />
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.1.21.1.min.js"></script>
+    <script type="text/javascript" src="js/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/scrollBar.js"></script>
+</head>
+
+<body>
+    <div class="mainDiv">
+        <div class="leftSection">
+            <div class="patientProfile">
+                <div class="wideDIV">
+                    <div class="profilePicture">
+                        <img src="images/profilePic.png">
+                    </div>
+                    <div class="patientDtl">
+                        <div class="wideDIV">
+                            <div class="patientName textEllipsis" title="Mr. Sanjay Sharma">Mr. Sanjay Sharma</div>
+                            <div style="margin-top: 3px">-</div>
+                            <div class="mrnNO">SSH28280819</div>
+                        </div>
+                        <div class="wideDIV patientAge">(Male / 51 Yrs)</div>
+                        <div class="wideDIV labelb5Top">
+                            <div class="fa_mednet fa-map-marker iconGrey"></div>
+                            <div class="pull_left textEllipsis" style="color: #777;width: calc(100% - 20px);">3rd Floor, Adisun Trade Center, 38 Ambazari lay-Out, Near Krazy Castle, Nagpur 440033</div>
+                        </div>
+                        <div class="wideDIV labelb5Top">
+                            <div class="labelContent">Allergies:&nbsp;</div>
+                            <div class="detailsContent" style="color:red;">Dust</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wideDIV labelb10Top">
+                    <div class="details_cart">BP (2016),</div>
+                    <div class="details_cart">HTN (2017),</div>
+                    <div class="details_cart">DM (2018),</div>
+                    <div class="details_cart">IHD (2019),</div>
+                </div>
+
+                <div class="wideDIV labelb10Top">
+                    <div class="labelContent">Diag.:&nbsp;</div>
+                    <div class="detailsContent">Angina Pectoris - I 20</div>
+                </div>
+
+                <div class="wideDIV labelb10Top">
+                    <div class="pull_right">
+                        <div class="btnCommonSmall">
+                            <div class="pull_left">Check Out</div>
+                            <div class="pull_left btnSeparator">Print</div>
+                        </div>
+                        <div class="btnCommonSmall">Hold</div>
+                        <div class="btnCommonSmall">Inv. Pend.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wideDIV" style="margin-top:10px;">
+                <div class="fancy-checkbox chkNewDBouter">
+                    <input type="checkbox" id="chkSelectAll" onClick="selectall(this);" />
+                    <label title="Show/Hide" for="chkSelectAll"></label>
+                </div>
+            </div>
+
+            <div class="wideDIV invDtlDivMain overflowVh" style="margin-top: 10px; height: 385px;">
+                <div class="invDtlDivOuter" style="display: none;">
+                    <div class="fancy-checkbox fancy-checkboxList">
+                        <input type="checkbox" name="foo" id="chkInvAdvReport" />
+                        <label title="Show/Hide" for="chkInvAdvReport"></label>
+                    </div>
+                    <div class="rightDtlSec">
+                        <span class="reasonLabel">Investigation Advise</span>
+                    </div>
+                    <div class="fa_mednet fa-trash-o deleteIconList" onClick="deleteList();"></div>
+                </div>
+
+                <div class="invDtlDivOuter invDtlDivOuterActive" id="detailsListDiv1">
+                    <div class="fancy-checkbox fancy-checkboxList">
+                        <input type="checkbox" name="foo" id="chkInvReport" />
+                        <label title="Show/Hide" for="chkInvReport"></label>
+                    </div>
+                    <div class="rightDtlSec">
+                        <span class="reasonLabel">Investigation</span>
+                        <span>K.F.T- Cr(1.02 mg/dl), K(2.40 mg/dl), R.B.C- (120 mg/dl), L.F.T- SGOT (56.06 IU/L).</span>
+                    </div>
+                    <div class="fa_mednet fa-trash-o deleteIconList" onClick="deleteList();"></div>
+                </div>
+
+                <div class="invDtlDivOuter">
+                    <div class="fancy-checkbox fancy-checkboxList">
+                        <input type="checkbox" name="foo" id="chkReasonForVisit" />
+                        <label title="Show/Hide" for="chkReasonForVisit"></label>
+                    </div>
+                    <div class="rightDtlSec">
+                        <span class="reasonLabel">Reason For Visit:</span>
+                        <span>A Thickening Or Lump On, Abdominal Pain, Weight Loss 5Kg in 2 weeks.</span>
+                    </div>
+                    <div class="fa_mednet fa-trash-o deleteIconList"></div>
+                </div>
+
+                <div class="invDtlDivOuter">
+                    <div class="fancy-checkbox fancy-checkboxList">
+                        <input type="checkbox" name="foo" id="chkPersonalDetails" />
+                        <label title="Show/Hide" for="chkPersonalDetails"></label>
+                    </div>
+                    <div class="rightDtlSec">
+                        <span class="reasonLabel">Anterior Segment Examination:</span>
+                        <span>Lens,Pupit,Cornea</span>
+                    </div>
+                    <div class="fa_mednet fa-trash-o deleteIconList"></div>
+                </div>
+
+                <div class="invDtlDivOuter">
+                    <div class="fancy-checkbox fancy-checkboxList">
+                        <input type="checkbox" name="foo" id="chkMedicalHistory" />
+                        <label title="Show/Hide" for="chkMedicalHistory"></label>
+                    </div>
+                    <div class="rightDtlSec">
+                        <span class="reasonLabel">Medical Advise:</span>
+                        <span>CEFLOX,COLICAID.</span>
+                    </div>
+                    <div class="fa_mednet fa-trash-o deleteIconList"></div>
+                </div>
+
+                <div class="invDtlDivOuter">
+                    <div class="fancy-checkbox fancy-checkboxList">
+                        <input type="checkbox" name="foo" id="chkVital" />
+                        <label title="Show/Hide" for="chkVital"></label>
+                    </div>
+                    <div class="rightDtlSec">
+                        <span class="reasonLabel">IOP:</span>
+                        <span>Gat, Mct, Schiotz</span>
+                    </div>
+                    <div class="fa_mednet fa-trash-o deleteIconList"></div>
+                </div>
+
+                <div class="invDtlDivOuter">
+                    <div class="fancy-checkbox fancy-checkboxList">
+                        <input type="checkbox" name="foo" id="chkInvReq" />
+                        <label title="Show/Hide" for="chkInvReq"></label>
+                    </div>
+                    <div class="rightDtlSec">
+                        <span class="reasonLabel">Surgery Advise:</span>
+                        <span>Photorefractive keratectomy (PRK), Conductive keratoplasty (CK), Laser</span>
+                    </div>
+                    <div class="fa_mednet fa-trash-o deleteIconList"></div>
+                </div>
+
+                <div class="invDtlDivOuter">
+                    <div class="fancy-checkbox fancy-checkboxList">
+                        <input type="checkbox" name="foo" id="chkExamination" />
+                        <label title="Show/Hide" for="chkExamination"></label>
+                    </div>
+                    <div class="rightDtlSec">
+                        <span class="reasonLabel">General Advise:</span>
+                        <span></span>
+                    </div>
+                    <div class="fa_mednet fa-trash-o deleteIconList"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rightSection">
+            <div class="slideMiddleMain">
+                <div class="gallery">
+                    <div class="gallery-cell">
+                        <div class="cardSection">
+                            <div class="wideDIV">
+                                <div class="wideDIV sec_outer_header">
+                                    <div class="breadCrumbLabel breadCrumbLabelActive">Investigation</div>
+
+                                    <div class="addBtn pull_right">
+                                        <div class="pull_left"><span class="fa_mednet fa-plus"></span>Add New</div>
+                                    </div>
+                                </div>
+
+                                <div class="wideDIV borderBox overflowVh" style="padding:10px 10px 10px 20px; max-height: calc(100vh - 275px); min-height: calc(100vh - 375px);">
+                                    <div class="wideDIV">
+                                        <div class="pull_left" style="width: 33%; border: 1px solid #ccc; height: 110px;">
+                                            <div class="wideDIV col-headerInv">
+                                                <div class="pull_left">CBC</div>
+                                            </div>
+                                            <div class="wideDIV">
+                                                <div class="tableRowDiv hoverSection hoverblock2 help_outer relative">
+                                                    <div class="rowDivList borderBox" style="padding-left: 5px;">Haemoglobin</div>
+                                                    <div class="rowDivList">12.3 g/dl</div>
+                                                    <div class="rowDivList" style="width: calc(100% - 180px);"></div>
+                                                    <div class="far fa-chart-bar pull_right " style="color: #5cb85c; margin-right: 5px; font-size: 15px;"></div>
+                                                    <div class="tooltip_help tooltip_helpDIV" style="left: 5px; width: 260px;">
+                                                        <div class="fa_mednet fa-caret-up tooltip_arr_help" style="right: 0px; left: 20px;"></div>
+                                                        <div class="tooltip_custom">
+                                                            <div class="wideDIV">
+                                                                <div style="font-weight: bold; font-size: 13px; width: 80px;" class="Pull_left">Machine:</div>
+                                                                <div class="pull_left" style="margin-top: 1px;">Advia 2120i</div>
+                                                            </div>
+                                                            <div class="wideDIV labelb8Top">
+                                                                <div style="font-weight: bold; font-size: 13px; width: 80px;" class="Pull_left">Method:</div>
+                                                                <div class="pull_left" style="margin-top: 1px;">Autometed</div>
+                                                            </div>
+                                                            <div class="wideDIV labelb8Top">
+                                                                <div style="font-weight: bold; font-size: 13px; width: 80px;" class="Pull_left">Ref. Range:</div>
+                                                                <div class="pull_left" style="margin-top: 1px;">13.00 - 16.00 gm/dl</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tableRowDiv hoverSection hoverblock2" style="display: none;">
+                                                    <div class="rowDivList borderBox" style="padding-left: 5px;">Label</div>
+                                                    <div class="rowDivList">Label</div>
+                                                    <div class="rowDivList" style="width: calc(100% - 180px);">Label</div>
+                                                </div>
+
+                                                <div class="tableRowDiv hoverSection hoverblock2" style="display: none;">
+                                                    <div class="rowDivList borderBox" style="padding-left: 5px;">Label</div>
+                                                    <div class="rowDivList">Label</div>
+                                                    <div class="rowDivList" style="width: calc(100% - 180px);">Label</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pull_left" style="width: 33%; border: 1px solid #ccc; margin-left: 5px; height: 110px;">
+                                            <div class="wideDIV  col-headerInv">
+                                                <div class="pull_left">K.F.T</div>
+                                            </div>
+                                            <div class="wideDIV">
+                                                <div class="tableRowDiv hoverSection hoverblock2 relative help_outer">
+                                                    <div class="rowDivList borderBox" style="padding-left: 5px;" title="Blood Sugar Random">Creatinine</div>
+                                                    <div class="rowDivList" title="Blood Sugar Random">0.99 mg/dl</div>
+                                                    <div class="rowDivList" style="width: calc(100% - 180px);" title="Blood Sugar Random"></div>
+                                                    <div class="far fa-chart-bar pull_right " style="color: #5cb85c; margin-right: 5px; font-size: 15px;"></div>
+                                                    <div style="left: 5px; width: 260px;" class="tooltip_help tooltip_helpDIV">
+                                                        <div style="right: 0px; left: 20px;" class="fa_mednet fa-caret-up tooltip_arr_help"></div>
+                                                        <div class="tooltip_custom">
+                                                            <div class="wideDIV">
+                                                                <div class="Pull_left" style="font-weight: bold; font-size: 13px; width: 80px;">Machine:</div>
+                                                                <div style="margin-top: 1px;" class="pull_left">Advia 2120i</div>
+                                                            </div>
+                                                            <div class="wideDIV labelb8Top">
+                                                                <div class="Pull_left" style="font-weight: bold; font-size: 13px; width: 80px;">Method:</div>
+                                                                <div style="margin-top: 1px;" class="pull_left">Autometed</div>
+                                                            </div>
+                                                            <div class="wideDIV labelb8Top">
+                                                                <div class="Pull_left" style="font-weight: bold; font-size: 13px; width: 80px;">Ref. Range:</div>
+                                                                <div style="margin-top: 1px;" class="pull_left">0.6 - 1.2 gm/dl</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tableRowDiv hoverSection hoverblock2 relative help_outer">
+                                                    <div class="rowDivList borderBox" style="padding-left: 5px;">Potassium</div>
+                                                    <div class="rowDivList" style="font-weight: bold;">5.8 mEq/L</div>
+                                                    <div class="rowDivList" style="width: calc(100% - 180px);"></div>
+                                                    <div class="far fa-chart-bar pull_right " style="color: red; margin-right: 5px; font-size: 15px;"></div>
+                                                    <div style="left: 5px;  width: 260px;" class="tooltip_help tooltip_helpDIV">
+                                                        <div style="right: 0px; left: 20px;" class="fa_mednet fa-caret-up tooltip_arr_help"></div>
+                                                        <div class="tooltip_custom">
+                                                            <div class="wideDIV">
+                                                                <div class="Pull_left" style="font-weight: bold; font-size: 13px; width: 80px;">Machine:</div>
+                                                                <div style="margin-top: 1px;" class="pull_left">Man</div>
+                                                            </div>
+                                                            <div class="wideDIV labelb8Top">
+                                                                <div class="Pull_left" style="font-weight: bold; font-size: 13px; width: 80px;">Method:</div>
+                                                                <div style="margin-top: 1px;" class="pull_left">Calculated</div>
+                                                            </div>
+                                                            <div class="wideDIV labelb8Top">
+                                                                <div class="Pull_left" style="font-weight: bold; font-size: 13px; width: 80px;">Ref. Range:</div>
+                                                                <div style="margin-top: 1px;" class="pull_left">3.5 - 5.0 gm/dl</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tableRowDiv hoverSection hoverblock2" style="display: none;">
+                                                    <div class="rowDivList borderBox" style="padding-left: 5px;">Label</div>
+                                                    <div class="rowDivList">Label</div>
+                                                    <div class="rowDivList" style="width: calc(100% - 180px);">Label</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pull_left" style="width: calc(34% - 10px); border: 1px solid #ccc; margin-left: 5px; height: 110px;">
+                                            <div class="wideDIV col-headerInv">
+                                                <div class="pull_left">Blood Sugar Random</div>
+                                            </div>
+                                            <div class="wideDIV">
+                                                <div class="tableRowDiv hoverSection hoverblock2 relative help_outer">
+                                                    <div class="rowDivList borderBox" style="padding-left: 5px; font-weight: bold;">70 mg/dl</div>
+                                                    <div class="rowDivList"></div>
+                                                    <div class="rowDivList" style="width: calc(100% - 180px);"></div>
+                                                    <div class="far fa-chart-bar pull_right " style="color: red; margin-right: 5px; font-size: 15px;"></div>
+                                                    <div style="left: 5px; width: 260px;" class="tooltip_help tooltip_helpDIV">
+                                                        <div style="right: 0px; left: 20px;" class="fa_mednet fa-caret-up tooltip_arr_help"></div>
+                                                        <div class="tooltip_custom">
+                                                            <div class="wideDIV">
+                                                                <div class="Pull_left" style="font-weight: bold; font-size: 13px; width: 80px;">Machine:</div>
+                                                                <div style="margin-top: 1px;" class="pull_left">Man</div>
+                                                            </div>
+                                                            <div class="wideDIV labelb8Top">
+                                                                <div class="Pull_left" style="font-weight: bold; font-size: 13px; width: 80px;">Method:</div>
+                                                                <div style="margin-top: 1px;" class="pull_left">Calculated</div>
+                                                            </div>
+                                                            <div class="wideDIV labelb8Top">
+                                                                <div class="Pull_left" style="font-weight: bold; font-size: 13px; width: 80px;">Ref. Range:</div>
+                                                                <div style="`margin-top: 1px;" class="pull_left">80 - 140 gm/dl</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tableRowDiv hoverSection hoverblock2" style="display: none;">
+                                                    <div class="rowDivList borderBox" style="padding-left: 5px;">Label</div>
+                                                    <div class="rowDivList">Label</div>
+                                                    <div class="rowDivList" style="width: calc(100% - 180px);">Label</div>
+                                                </div>
+
+                                                <div class="tableRowDiv hoverSection hoverblock2" style="display: none;">
+                                                    <div class="rowDivList borderBox" style="padding-left: 5px;">Label</div>
+                                                    <div class="rowDivList">Label</div>
+                                                    <div class="rowDivList" style="width: calc(100% - 180px);">Label</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="wideDIV labelb15Top">
+                                        <div class="pull_left" style="width: 33%; border: 1px solid #ccc; height: 110px;">
+                                            <div class="wideDIV col-headerInv">
+                                                <div class="pull_left">Bleeding And Clooting Time</div>
+                                            </div>
+                                            <div class="wideDIV">
+                                                <div class="tableRowDiv hoverSection hoverblock2">
+                                                    <div class="rowDivList borderBox" style="padding-left: 5px;">BT</div>
+                                                    <div class="rowDivList">Not Seen</div>
+                                                    <div class="rowDivList" style="width: calc(100% - 180px);"></div>
+                                                    <div class="far fa-chart-bar pull_right" style="color: #5cb85c; margin-right: 5px; font-size: 15px;"></div>
+                                                </div>
+
+                                                <div class="tableRowDiv hoverSection hoverblock2">
+                                                    <div class="rowDivList borderBox" style="padding-left: 5px;">CT</div>
+                                                    <div class="rowDivList">3 min</div>
+                                                    <div class="rowDivList" style="width: calc(100% - 180px);"></div>
+                                                    <div class="far fa-chart-bar pull_right" style="color: #5cb85c; margin-right: 5px; font-size: 15px;"></div>
+                                                </div>
+
+                                                <div class="tableRowDiv hoverSection hoverblock2" style="display: none;">
+                                                    <div class="rowDivList borderBox" style="padding-left: 5px;">Label</div>
+                                                    <div class="rowDivList">Label</div>
+                                                    <div class="rowDivList" style="width: calc(100% - 180px);">Label</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pull_left" style="width: 33%; border: 1px solid #ccc;margin-left: 5px; height: 110px;">
+                                            <div class="wideDIV col-headerInv">
+                                                <div class="pull_left">Free T3</div>
+                                            </div>
+                                            <div class="wideDIV">
+                                                <div class="tableRowDiv hoverSection hoverblock2">
+                                                    <div class="rowDivList borderBox" style="padding-left: 5px;">4.06 PMOL/L</div>
+                                                    <div class="rowDivList"></div>
+                                                    <div class="rowDivList" style="width: calc(100% - 180px);"></div>
+                                                    <div class="far fa-chart-bar pull_right" style="color: #5cb85c; margin-right: 5px; font-size: 15px;"></div>
+                                                </div>
+
+                                                <div class="tableRowDiv hoverSection hoverblock2" style="display: none;">
+                                                    <div class="rowDivList borderBox" style="padding-left: 5px;">Label</div>
+                                                    <div class="rowDivList">Label</div>
+                                                    <div class="rowDivList" style="width: calc(100% - 180px);">Label</div>
+                                                </div>
+
+                                                <div class="tableRowDiv hoverSection hoverblock2" style="display: none;">
+                                                    <div class="rowDivList borderBox" style="padding-left: 5px;">Label</div>
+                                                    <div class="rowDivList">Label</div>
+                                                    <div class="rowDivList" style="width: calc(100% - 180px);">Label</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pull_left" style="width: calc(34% - 10px); border: 1px solid #ccc; margin-left: 5px; height: 110px;">
+                                            <div class="wideDIV col-headerInv">
+                                                <div class="pull_left">L.F.T</div>
+                                            </div>
+                                            <div class="wideDIV">
+                                                <div class="tableRowDiv hoverSection hoverblock2">
+                                                    <div class="rowDivList borderBox" style="padding-left: 5px;">SGOT</div>
+                                                    <div class="rowDivList" style="font-weight: bold;">58 IU/L</div>
+                                                    <div class="rowDivList" style="width: calc(100% - 180px)"></div>
+                                                    <div class="far fa-chart-bar pull_right" style="color: red; margin-right: 5px; font-size: 15px;"></div>
+                                                </div>
+
+                                                <div class="tableRowDiv hoverSection hoverblock2" style="display: none;">
+                                                    <div class="rowDivList borderBox" style="padding-left: 5px;">Label</div>
+                                                    <div class="rowDivList">Label</div>
+                                                    <div class="rowDivList" style="width: calc(100% - 180px);">Label</div>
+                                                </div>
+
+                                                <div class="tableRowDiv hoverSection hoverblock2" style="display: none;">
+                                                    <div class="rowDivList borderBox" style="padding-left: 5px;">Label</div>
+                                                    <div class="rowDivList">Label</div>
+                                                    <div class="rowDivList" style="width: calc(100% - 180px);">Label</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="wideDIV sec_outer_header">
+                                    <div class="breadCrumbLabel breadCrumbLabelActive">Report Awaited</div>
+                                </div>
+                                <div class="wideDIV">
+                                    <div class="col-header borderBox">
+                                        <div class="labelb5 borderBox" style="width: 15%; padding-left: 20px;">Report Name</div>
+                                        <div class="labelb5" style="width: 10%;">Status</div>
+                                    </div>
+                                    <div class="wideDIV tableRowDiv hoverSection hoverblock2">
+                                        <div class="labelb5 borderBox" style="width: 15%; padding-left: 20px;">RBS</div>
+                                        <div class="labelb5" style="width: 10%;">Pending</div>
+                                    </div>
+                                </div>
+
+                                <div class="btnFooter">
+                                    <div class="btnCommon">Save</div>
+                                    <div class="pull_right DBp8">Dr. Yogendra Oke <span class="spanTime">10:00 AM - 11:30 AM</span></div>
+                                    <div class="pull_right DBp8">
+                                        <div class="fa_mednet fa-o'clock"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-cell">
+                        <div class="cardSection">
+                            <div class="wideDIV sec_outer_header">
+                                <div class="breadCrumbLabel breadCrumbLabelActive">Reason For Visit</div>
+                                <div class="pull_right">
+                                    <div class="pull_left" id="selectedBtnMain">
+                                        <div class="deselectedBtnFlag selectedBtnFlag">C/O</div>
+                                        <div class="deselectedBtnFlag">H/O</div>
+                                        <div class="deselectedBtnFlag">Ref</div>
+                                        <div class="deselectedBtnFlag">F/up</div>
+                                    </div>
+                                    <div class="addNewButton" title="Add New Complaints">+</div>
+                                </div>
+                            </div>
+
+                            <div class="wideDIV secTopAfterHed">
+                                <div class="wideDIV" style="overflow-y: auto; min-height: 100px; max-height: 100px;">
+                                    <div class="dBoxSmall">
+                                        <div class="dBoxHalfLeft">Redness</div>
+                                        <div class="pull_left" id="eyeSpanMain">
+                                            <div class="dBoxHalfMiddle eyeSpanInActive eyeSpanActive hover">
+                                                <span>Right</span>
+                                                <span class="fa_mednet fa-eye eyeIcon"></span>
+                                            </div>
+                                            <div class="dBoxHalfMiddle eyeSpanInActive hover">
+                                                <span>Left</span>
+                                                <span class="fa_mednet fa-eye eyeIcon"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="pull_left dBoxHeader">
+                                            <div class="labelb5">Since</div>
+                                            <div style="margin-left: 5px;" class="pull_left">
+                                                <input type="number" min="0" maxlength="3" value="" class="inputFocus inputNo">
+                                            </div>
+                                            <div style="margin-left: 5px;" class="pull_left">
+                                                <label class="selectOptionDB">
+                                                        <select class="inputFocus selectDM">
+                                                            <option value="day">day(s)</option>
+                                                            <option value="month">month(s)</option>
+                                                            <option value="week">week(s)</option>
+                                                            <option value="year">year(s)</option>
+                                                            <option value="hour">hour(s)</option>
+                                                        </select>
+                                                    </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="dBoxHeader" style="display:none;">
+                                            <div class="valueDD">
+                                                <input type="text" placeholder="5" value="5">
+                                                <span class="fa_mednet fa-angle-down faArrow"></span>
+                                            </div>
+                                            <div class="valueDD">
+                                                <input type="text" placeholder="D" value="D">
+                                                <span class="fa_mednet fa-angle-down faArrow"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="dBoxSmall">
+                                        <div class="dBoxHalfLeft">Watering</div>
+                                        <div class="pull_left" id="">
+                                            <div class="dBoxHalfMiddle eyeSpanInActive eyeSpanActive hover">
+                                                <span>Right</span>
+                                                <span class="fa_mednet fa-eye eyeIcon"></span>
+                                            </div>
+                                            <div class="dBoxHalfMiddle eyeSpanInActive hover">
+                                                <span>Left</span>
+                                                <span class="fa_mednet fa-eye eyeIcon"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="pull_left dBoxHeader">
+                                            <div class="labelb5">Since</div>
+                                            <div style="margin-left:5px;" class="pull_left">
+                                                <input type="number" min="0" maxlength="3" value="" class="inputFocus inputNo">
+                                            </div>
+                                            <div style="margin-left: 5px;" class="pull_left">
+                                                <label class="selectOptionDB">
+                                                        <select class="inputFocus selectDM">
+                                                            <option value="day">day(s)</option>
+                                                            <option value="month">month(s)</option>
+                                                            <option value="week">week(s)</option>
+                                                            <option value="year">year(s)</option>
+                                                            <option value="hour">hour(s)</option>
+                                                        </select>
+                                                    </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="dBoxSmall">
+                                        <div class="dBoxHalfLeft">Headache</div>
+                                        <div class="pull_left" id="">
+                                            <div class="dBoxHalfMiddle eyeSpanInActive eyeSpanActive hover">
+                                                <span>Right</span>
+                                                <span class="fa_mednet fa-eye eyeIcon"></span>
+                                            </div>
+                                            <div class="dBoxHalfMiddle eyeSpanInActive hover">
+                                                <span>Left</span>
+                                                <span class="fa_mednet fa-eye eyeIcon"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="pull_left dBoxHeader">
+                                            <div class="labelb5">Since</div>
+                                            <div style="margin-left:5px;" class="pull_left">
+                                                <input type="number" min="0" maxlength="3" value="" class="inputFocus inputNo">
+                                            </div>
+                                            <div style="margin-left: 5px;" class="pull_left">
+                                                <label class="selectOptionDB">
+                                                        <select class="inputFocus selectDM">
+                                                            <option value="day">day(s)</option>
+                                                            <option value="month">month(s)</option>
+                                                            <option value="week">week(s)</option>
+                                                            <option value="year">year(s)</option>
+                                                            <option value="hour">hour(s)</option>
+                                                        </select>
+                                                    </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="dBoxSmall">
+                                        <div class="dBoxHalfLeft">Blurring of Vision</div>
+                                        <div class="pull_left" id="">
+                                            <div class="dBoxHalfMiddle eyeSpanInActive eyeSpanActive hover">
+                                                <span>Right</span>
+                                                <span class="fa_mednet fa-eye eyeIcon"></span>
+                                            </div>
+                                            <div class="dBoxHalfMiddle eyeSpanInActive hover">
+                                                <span>Left</span>
+                                                <span class="fa_mednet fa-eye eyeIcon"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="pull_left dBoxHeader">
+                                            <div class="labelb5">Since</div>
+                                            <div style="margin-left:5px;" class="pull_left">
+                                                <input type="number" min="0" maxlength="3" value="" class="inputFocus inputNo">
+                                            </div>
+                                            <div style="margin-left: 5px;" class="pull_left">
+                                                <label class="selectOptionDB">
+                                                        <select class="inputFocus selectDM">
+                                                            <option value="day">day(s)</option>
+                                                            <option value="month">month(s)</option>
+                                                            <option value="week">week(s)</option>
+                                                            <option value="year">year(s)</option>
+                                                            <option value="hour">hour(s)</option>
+                                                        </select>
+                                                    </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wideDIV labelb10Top" style="padding: 10px 10px 10px 20px; min-height: calc(100vh - 248px);">
+                                <div class="tableSection relative">
+                                    <div class="tableHeader">
+                                        <div class="pull_left borderBox" style="padding-left: 10px; width: 135px;">
+                                            <label class="selectOptionDB" style="font-weight: normal;width: calc(100% - 15px);">
+                                                    <select class="inputFocus selectDM"  style="width:100%;">
+                                                        <option value="day">Complaints of</option>
+                                                        <option value="month">History of</option>
+                                                        <option value="week">Referred of</option>
+                                                        <option value="year">Followup</option>
+                                                    </select>
+                                                </label>
+                                        </div>
+                                        <div class="pull_left" style="width: calc(50% - 280px);">
+                                            <input class="inputFocus" type="text" placeholder="Prime value in card" style="height: 25px; width: calc(100% - 2px);">
+                                        </div>
+                                        <div style="width: 100px;" class="pull_left">
+                                            <label style="font-weight: normal; width: calc(100% - 5px);" class="selectOptionDB">
+                                                    <select style="width:100%;" class="inputFocus selectDM">
+                                                        <option value="day">Right Eye</option>
+                                                        <option value="month">Left Eye</option>
+                                                        <option value="week">Right Ear</option>
+                                                        <option value="year">Left Ear</option>
+                                                        <option value="yeara">option A</option>
+                                                        <option value="yearb">option B</option>
+                                                        <option value="yearc">option C</option>
+                                                    </select>
+                                                </label>
+                                        </div>
+                                        <div class="labelb5" style="width: 35px;">Since</div>
+                                        <div class="pull_left">
+                                            <div class="pull_left" style="margin-left: 5px;">
+                                                <input type="number" class="inputFocus inputNo" value="" maxlength="3" min="0">
+                                            </div>
+                                            <div class="pull_left" style="margin-left: 5px;">
+                                                <label class="selectOptionDB">
+                                                        <select class="inputFocus selectDM">
+                                                            <option value="day">day(s)</option>
+                                                            <option value="month">month(s)</option>
+                                                            <option value="week">week(s)</option>
+                                                            <option value="year">year(s)</option>
+                                                            <option value="hour">hour(s)</option>
+                                                        </select>
+                                                    </label>
+                                            </div>
+                                            <div class="pull_left" style="margin-left: 5px; height: 25px; width: 97px;">
+                                                <input class="mednetDateField inputFocus" type="text" id="datepicker" placeholder="DD/MM/YYYY" style="width: 100%; height: 25px;">
+                                            </div>
+                                        </div>
+                                        <div class="pull_left" style="width: calc(50% - 285px); padding-left: 10px;">
+                                            <input class="inputFocus" type="text" placeholder="Notes" style="height: 25px; width: 100%;">
+                                        </div>
+                                    </div>
+                                    <div class="wideDIV overflowVh" style="max-height: calc(100vh - 298px);">
+                                        <div class="tableRowDiv hoverSection hoverblock2">
+                                            <div style="padding-left: 10px; width: 135px;" class="pull_left borderBox">Complaints of</div>
+                                            <div style="width: calc(50% - 275px);" class="pull_left textEllipsis">To be added as text</div>
+                                            <div style="width: 100px;" class="pull_left">Right Eye</div>
+                                            <div class="pull_left" style="width: 35px;"></div>
+                                            <div style="width: 245px; text-indent: 5px; margin-left:35px;" class="pull_left">
+                                                <div style="width: 49px;" class="pull_left">3</div>
+                                                <div style="width: 85px;" class="pull_left">hours</div>
+                                                <div style="width: 83px;" class="pull_left">09/10/2019</div>
+                                            </div>
+                                            <div style="width: calc(50% - 295px);" class="pull_left textEllipsis">To be added as text</div>
+                                            <div class="pull_left hoverBlock" style="margin-left: 5px; margin-top: -1px;">
+                                                <div class="fa_mednet fa-pencil  editBtnList" title="Edit Details"></div>
+                                                <div class="pull_left">
+                                                    <div class="fa_mednet fa-trash-o deleteIconList"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tableRowDiv hoverSection hoverblock2">
+                                            <div style="padding-left: 10px; width: 135px;" class="pull_left borderBox">History of</div>
+                                            <div style="width: calc(50% - 275px);" class="pull_left textEllipsis">To be added as text</div>
+                                            <div style="width: 100px;" class="pull_left">Right Eye</div>
+                                            <div class="pull_left" style="width: 35px;"></div>
+                                            <div style="width: 245px; text-indent: 5px; margin-left:35px;" class="pull_left">
+                                                <div style="width: 49px;" class="pull_left">7</div>
+                                                <div style="width: 85px;" class="pull_left">months</div>
+                                                <div style="width: 83px;" class="pull_left">09/10/2019</div>
+                                            </div>
+                                            <div style="width: calc(50% - 295px);" class="pull_left textEllipsis">To be added as text</div>
+                                            <div class="pull_left hoverBlock" style="margin-left: 5px; margin-top: -1px;">
+                                                <div class="fa_mednet fa-pencil  editBtnList" title="Edit Details" style=""></div>
+                                                <div class="pull_left">
+                                                    <div class="fa_mednet fa-trash-o deleteIconList"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tableRowDiv hoverSection hoverblock2">
+                                            <div style="padding-left: 10px; width: 135px;" class="pull_left borderBox">Referred of</div>
+                                            <div style="width: calc(50% - 275px);" class="pull_left textEllipsis">To be added as text</div>
+                                            <div style="width: 100px;" class="pull_left">Right Eye</div>
+                                            <div class="pull_left" style="width: 35px;"></div>
+                                            <div style="width: 245px; text-indent: 5px; margin-left:35px;" class="pull_left">
+                                                <div style="width: 49px;" class="pull_left">5</div>
+                                                <div style="width: 85px;" class="pull_left">weeks</div>
+                                                <div style="width: 85px;" class="pull_left">09/10/2019</div>
+                                            </div>
+                                            <div style="width: calc(50% - 295px);" class="pull_left textEllipsis">To be added as text</div>
+                                            <div class="pull_left hoverBlock" style="margin-left: 5px;  margin-top: -1px;">
+                                                <div class="fa_mednet fa-pencil  editBtnList" title="Edit Details" style=""></div>
+                                                <div class="pull_left">
+                                                    <div class="fa_mednet fa-trash-o deleteIconList"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tableRowDiv hoverSection hoverblock2">
+                                            <div style="padding-left: 10px; width: 135px;" class="pull_left borderBox">Follow Up</div>
+                                            <div style="width: calc(50% - 275px);" class="pull_left textEllipsis">To be added as text</div>
+                                            <div style="width: 100px;" class="pull_left">Right Eye</div>
+                                            <div class="pull_left" style="width: 35px;"></div>
+                                            <div style="width: 245px; text-indent: 5px; margin-left:35px;" class="pull_left">
+                                                <div style="width: 49px;" class="pull_left">1</div>
+                                                <div style="width: 85px;" class="pull_left">week</div>
+                                                <div style="width: 85px;" class="pull_left">09/10/2019</div>
+                                            </div>
+                                            <div style="width: calc(50% - 295px);" class="pull_left textEllipsis">To be added as text</div>
+                                            <div class="pull_left hoverBlock" style="margin-left: 5px;  margin-top: -1px;">
+                                                <div class="fa_mednet fa-pencil  editBtnList" title="Edit Details" style=""></div>
+                                                <div class="pull_left">
+                                                    <div class="fa_mednet fa-trash-o deleteIconList"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wideDIV">
+                                            <div class="addNewSectionButton pull_right" title="Add New">+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btnFooter">
+                                <div class="btnCommon">Save</div>
+                                <div class="pull_right DBp8">Dr. Yogendra Oke <span class="spanTime">11:35 AM - 12:50 PM</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-cell">
+                        <div class="cardSection">
+                            <div class="wideDIV sec_outer_header">
+                                <div class="breadCrumbLabel breadCrumbLabelActive">Anterior Segment Examination</div>
+                                <div class="addBtn pull_right">
+                                    <div class="pull_left"><span class="fa_mednet fa-plus"></span>Add New</div>
+                                </div>
+                            </div>
+
+                            <div class="wideDIV textareaDB">
+                                <div style="border: 1px solid #ccc" class="wideDIV">
+                                    <div class="tableRowDiv">
+                                        <div class="labelb5Top borderBox" style="width: calc(100% - 400px); padding-left: 10px;">Lids</div>
+                                        <div class="labelb5Top" style="width: 100px;">R.E</div>
+                                        <div class="pull_left" style="width: 200px;">
+                                            <label class="selectOptionDB">
+                                                    <select class="inputFocus selectDM">
+                                                        <option value="slect">--Select--</option>
+                                                        <option value="Both"> Both </option>
+                                                        <option value="Less than"> > </option>
+                                                        <option value="Greather than"> < </option>
+                                                    </select>
+                                                </label>
+                                        </div>
+                                        <div class="labelb5Top" style="width: 100px;">L.E</div>
+                                    </div>
+
+                                    <div class="tableRowDiv">
+                                        <div class="labelb5Top borderBox" style="width: calc(100% - 400px); padding-left: 10px;">Conjuctiva</div>
+                                        <div class="labelb5Top" style="width: 100px;">R.E</div>
+                                        <div class="labelb5Top" style="width: 200px;">
+                                            <label class="selectOptionDB">
+                                                    <select class="inputFocus selectDM">
+                                                        <option value="slect">--Select--</option>
+                                                        <option value="Both"> Both </option>
+                                                        <option value="Less than"> > </option>
+                                                        <option value="Greather than"> < </option>
+                                                    </select>
+                                                </label>
+                                        </div>
+                                        <div class="labelb5Top" style="width: 100px;">L.E</div>
+                                    </div>
+
+                                    <div class="tableRowDiv">
+                                        <div class="labelb5Top borderBox" style="width: calc(100% - 400px); padding-left: 10px;">Cornea</div>
+                                        <div class="labelb5Top" style="width: 100px;">R.E</div>
+                                        <div class="labelb5Top" style="width: 200px;">
+                                            <label class="selectOptionDB">
+                                                    <select class="inputFocus selectDM">
+                                                        <option value="slect">--Select--</option>
+                                                        <option value="Both"> Both </option>
+                                                        <option value="Less than"> > </option>
+                                                        <option value="Greather than"> < </option>
+                                                    </select>
+                                                </label>
+                                        </div>
+                                        <div class="labelb5Top" style="width: 100px;">L.E</div>
+                                    </div>
+
+                                    <div class="tableRowDiv">
+                                        <div class="labelb5Top borderBox" style="width: calc(100% - 400px); padding-left: 10px;">pupil</div>
+                                        <div class="labelb5Top" style="width: 100px;">R.E</div>
+                                        <div class="labelb5Top" style="width: 200px;">
+                                            <label class="selectOptionDB">
+                                                    <select class="inputFocus selectDM">
+                                                        <option value="slect">--Select--</option>
+                                                        <option value="Both"> Both </option>
+                                                        <option value="Less than"> > </option>
+                                                        <option value="Greather than"> < </option>
+                                                    </select>
+                                                </label>
+                                        </div>
+                                        <div class="labelb5Top" style="width: 100px;">L.E</div>
+                                    </div>
+
+                                    <div class="tableRowDiv">
+                                        <div class="labelb5Top borderBox" style="width: calc(100% - 400px); padding-left: 10px;">Lens</div>
+                                        <div class="labelb5Top" style="width: 100px;">R.E</div>
+                                        <div class="pull_left" style="width: 200px;">
+                                            <label class="selectOptionDB">
+                                                    <select class="inputFocus selectDM">
+                                                        <option value="slect">--Select--</option>
+                                                        <option value="Both"> Both </option>
+                                                        <option value="Less than"> > </option>
+                                                        <option value="Greather than"> < </option>
+                                                    </select>
+                                                </label>
+                                        </div>
+                                        <div class="labelb5Top" style="width: 100px;">L.E</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btnFooter">
+                                <div class="btnCommon">Save</div>
+                                <div class="pull_right DBp8">Dr. Yogendra Oke <span class="spanTime">1:00 PM - 2:30 PM</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-cell">
+                        <div class="cardSection">
+                            <div class="wideDIV sec_outer_header">
+                                <div class="breadCrumbLabel breadCrumbLabelActive">Medical Advise</div>
+                            </div>
+
+                            <div style="padding: 10px 10px 10px 20px;" class="wideDIV labelb10Top">
+                                <div class="tableSection relative">
+                                    <div class="tableHeader">
+                                        <div class="pull_left borderBox" style="width: 135px; padding-left: 10px;">
+                                            <input type="text" class="inputFocus" placeholder="" style="width: 115px;">
+                                        </div>
+                                        <div class="labelb5" style="width: 120px;">Route</div>
+                                        <div style="width: calc(50% - 255px);" class="pull_left">
+                                            <input type="text" style="width: calc(100% - 20px);" placeholder="Dosages" class="inputFocus">
+                                        </div>
+                                        <div class="pull_left" style="width: 65px;">
+                                            <input type="text" placeholder="Frequency" style="width: 60px;" class="inputFocus">
+                                        </div>
+
+                                        <div class="pull_left" style="width: 180px;">
+                                            <div class="pull_left labelb5Top">Pre. For</div>
+                                            <div style="margin-left: 5px;" class="pull_left">
+                                                <input type="number" min="0" maxlength="3" value="" class="inputFocus inputNo">
+                                            </div>
+                                            <div style="margin-left: 5px;" class="pull_left">
+                                                <label class="selectOptionDB">
+                                                        <select class="inputFocus selectDM">
+                                                            <option value="day">day(s)</option>
+                                                            <option value="month">month(s)</option>
+                                                            <option value="week">week(s)</option>
+                                                            <option value="year">year(s)</option>
+                                                            <option value="hour">hour(s)</option>
+                                                        </select>
+                                                    </label>
+                                            </div>
+                                        </div>
+
+                                        <div style="padding-left: 10px; width: calc(50% - 255px);" class="pull_left bordeBox">
+                                            <input type="text" class="inputFocus" placeholder="Notes" style="width: calc(100% - 10px);">
+                                        </div>
+                                    </div>
+
+                                    <div style="max-height: calc(100vh - 192px); min-height: calc(100vh - 192px);" class="wideDIV overflowVh">
+                                        <div class="tableRowDiv hoverSection hoverblock2">
+                                            <div class="pull_left borderBox" style="padding-left: 10px; width: 135px;">Bausch</div>
+                                            <div class="pull_left textEllipsis" style="width: 120px;">Eye Drop</div>
+                                            <div style="width: calc(50% - 255px);" class="pull_left">0.1ml</div>
+                                            <div style="width: 90px;" class="pull_left">OD</div>
+                                            <div class="pull_left borderBox" style="width: 155px; padding-left: 25px;">
+                                                <div class="pull_left" style="width: 45px;">2</div>
+                                                <div class="pull_left" style="width: 85px;">days</div>
+                                            </div>
+                                            <div title="To be added as text" style="padding-left: 10px; width: calc(50% - 305px);" class="pull_left textEllipsis">Addede as text</div>
+                                            <div class="pull_left hoverBlock" style="margin-left: 5px; margin-top: -1px;">
+                                                <div class="fa_mednet fa-pencil  editBtnList" title="Edit Details" style=""></div>
+                                                <div class="pull_left">
+                                                    <div class="fa_mednet fa-trash-o deleteIconList"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tableRowDiv hoverSection hoverblock2">
+                                            <div class="pull_left borderBox" style="padding-left: 10px; width: 135px;">None</div>
+                                            <div class="pull_left textEllipsis" style="width: 120px;">Eye Drop</div>
+                                            <div style="width: calc(50% - 255px);" class="pull_left">0.1ml</div>
+                                            <div style="width: 90px;" class="pull_left">BD</div>
+                                            <div class="pull_left borderBox" style="width: 155px; padding-left: 25px;">
+                                                <div class="pull_left" style="width: 45px;">3</div>
+                                                <div class="pull_left" style="width: 85px;">weeks</div>
+                                            </div>
+                                            <div title="To be added as text" style="padding-left: 10px; width: calc(50% - 305px);" class="pull_left textEllipsis">Addede as text</div>
+                                            <div class="pull_left hoverBlock" style="margin-left: 5px; margin-top: -1px;">
+                                                <div class="fa_mednet fa-pencil  editBtnList" title="Edit Details" style=""></div>
+                                                <div class="pull_left">
+                                                    <div class="fa_mednet fa-trash-o deleteIconList"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tableRowDiv hoverSection hoverblock2">
+                                            <div class="pull_left borderBox" style="padding-left: 10px; width: 135px;">None</div>
+                                            <div class="pull_left textEllipsis" style="width: 120px;">Eye Drop</div>
+                                            <div style="width: calc(50% - 255px);" class="pull_left">0.1ml</div>
+                                            <div style="width: 90px;" class="pull_left">TDS</div>
+                                            <div class="pull_left borderBox" style="width: 155px; padding-left: 25px;">
+                                                <div class="pull_left" style="width: 45px;">1</div>
+                                                <div class="pull_left" style="width: 85px;">months</div>
+                                            </div>
+                                            <div title="To be added as text" style="padding-left: 10px; width: calc(50% - 305px);" class="pull_left textEllipsis">Addede as text</div>
+                                            <div class="pull_left hoverBlock" style="margin-left: 5px; margin-top: -1px;">
+                                                <div class="fa_mednet fa-pencil  editBtnList" title="Edit Details" style=""></div>
+                                                <div class="pull_left">
+                                                    <div class="fa_mednet fa-trash-o deleteIconList"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="wideDIV">
+                                            <div title="Add New" class="addNewSectionButton pull_right">+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btnFooter">
+                                <div class="btnCommon">Save</div>
+                                <div class="pull_right DBp8">Dr. Yogendra Oke <span class="spanTime">3:00 PM - 4:00 PM</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-cell">
+                        <div class="cardSection">
+                            <div class="wideDIV sec_outer_header">
+                                <div class="breadCrumbLabel breadCrumbLabelActive">IOP</div>
+                                <div class="pull_right" style="margin-top: 5px;">
+                                    <div class="labelw5b5 rcLabel">Dilaled</div>
+                                    <div class="fancy-checkbox fancy-checkboxList">
+                                        <input type="checkbox" id="chkIOP" name="IOPfoo">
+                                        <label for="chkIOP" title="Show/Hide"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wideDIV secTopAfterHed" style="border: 0px;">
+                                <div class="tableSection relative">
+                                    <div class="tableHeader" style="padding:5px 10px;">
+                                        <div class="pull_left" style="width: 140px;">
+                                            <label class="selectOptionDB">
+                                                    <select class="inputFocus selectDM" style="width: 100px">
+                                                        <option value="Mode">MODE</option>
+                                                        <option value="Mode">GAT</option>
+                                                        <option value="Mode">MCT</option>
+                                                        <option value="Mode">SCHIOTZ</option>
+                                                    </select>
+                                                </label>
+                                        </div>
+                                        <div class="labelb5" style="width: 150px;">R.E</div>
+                                        <div class="labelb5" style="width: 150px;">L.E</div>
+                                    </div>
+
+                                    <div class="wideDIV overflowVh" style="min-height: calc(100vh - 182px); max-height: calc(100vh - 182px);">
+                                        <div class="tableRowDiv hoverSection hoverblock2">
+                                            <div class="pull_left labelb5" style="width: 150px; padding-left: 10px;">GAT</div>
+                                            <div class="pull_left" style="width: 150px;">
+                                                <input type="number" min="1" max="100" value="" class="inputFocus inputNo">
+                                            </div>
+                                            <div class="pull_left" style="width: 150px;">
+                                                <input type="number" min="1" max="100" value="" class="inputFocus inputNo">
+                                            </div>
+                                        </div>
+
+                                        <div class="tableRowDiv hoverSection hoverblock2">
+                                            <div class="pull_left labelb5" style="width: 150px; padding-left: 10px;">MCT</div>
+                                            <div class="pull_left" style="width: 150px;">
+                                                <input type="number" min="1" max="100" value="" class="inputFocus inputNo">
+                                            </div>
+                                            <div class="pull_left" style="width: 150px;">
+                                                <input type="number" min="1" max="100" value="" class="inputFocus inputNo">
+                                            </div>
+                                        </div>
+
+                                        <div class="tableRowDiv hoverSection hoverblock2">
+                                            <div class="pull_left labelb5" style="width: 150px; padding-left: 10px;">SCHIOTZ</div>
+                                            <div class="pull_left" style="width: 150px;">
+                                                <input type="number" min="1" max="100" value="" class="inputFocus inputNo">
+                                            </div>
+                                            <div class="pull_left" style="width: 150px;">
+                                                <input type="number" min="1" max="100" value="" class="inputFocus inputNo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btnFooter">
+                                <div class="btnCommon">Save</div>
+                                <div class="DBp8" style="text-align: center">Dr. Yogendra Oke <span class="spanTime">7:00 PM - 7:30 PM</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-cell">
+                        <div class="cardSection">
+                            <div class="wideDIV sec_outer_header">
+                                <div class="breadCrumbLabel breadCrumbLabelActive">Surgery Advise</div>
+                            </div>
+
+                            <div class="wideDIV labelb10Top" style="padding: 10px 10px 10px 20px;">
+                                <div class="tableSection relative">
+                                    <div class="tableHeader">
+                                        <div class="pull_left borderBox" style="padding-left: 10px; width: 115px;">
+                                            <label class="selectOptionDB" style="font-weight: normal; width: calc(100% - 5px);">
+                                                    <select class="inputFocus selectDM" style="width:100%;">
+                                                        <option value="day">Right Eye</option>
+                                                        <option value="month">Left Eye</option>
+                                                        <option value="yeara">option A</option>
+                                                        <option value="yearb">option B</option>
+                                                        <option value="yearc">option C</option>
+                                                    </select>
+                                                </label>
+                                        </div>
+                                        <div class="pull_left" style="width: calc(100% - 410px); padding-left: 10px;">
+                                            <input type="text" class="inputFocus" placeholder="Name of Surgery" style="width: 100%;">
+                                        </div>
+
+
+                                        <div class="pull_left" style="padding-left: 10px; width: 108px;">
+
+
+                                            <div class="pull_left">
+                                                <input type="text" class="mednetDateField inputFocus hasDatepicker" id="" placeholder="DD/MM/YYYY" style="width: 100%; height: 25px;">
+                                            </div>
+                                        </div>
+                                        <div class="pull_left" style="width: 170px; padding-left: 10px;">
+                                            <input type="text" class="inputFocus" placeholder="Notes" style="height: 25px; width: 100%;">
+                                        </div>
+                                    </div>
+                                    <div class="wideDIV overflowVh" style="min-height: calc(100vh - 193px); max-height: calc(100vh - 193px);">
+                                        <div class="tableRowDiv hoverSection hoverblock2">
+                                            <div style="padding-left: 10px; width: 115px;" class="pull_left borderBox">Right Eye</div>
+                                            <div style="width: calc(100% - 410px); padding-left: 10px;" class="pull_left">Name of surgery</div>
+                                            <div style="padding-left: 10px; width: 108px;" class="pull_left">
+                                                <div style="width: 100px;" class="pull_left">09/10/2019</div>
+                                            </div>
+                                            <div style="width: 130px; padding-left: 10px;" class="pull_left">To be added as text</div>
+                                            <div class="pull_left hoverBlock" style="margin-left: 5px; margin-top: -1px;">
+                                                <div class="fa_mednet fa-pencil  editBtnList" title="Edit Details"></div>
+                                                <div class="pull_left">
+                                                    <div class="fa_mednet fa-trash-o deleteIconList"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tableRowDiv hoverSection hoverblock2">
+                                            <div style="padding-left: 10px; width: 115px;" class="pull_left borderBox">Left Eye</div>
+                                            <div style="width: calc(100% - 410px); padding-left: 10px;" class="pull_left">Name of surgery</div>
+                                            <div style="padding-left: 10px; width: 108px;" class="pull_left">
+                                                <div style="width: 100px;" class="pull_left">09/10/2019</div>
+                                            </div>
+                                            <div style="width: 130px; padding-left: 10px;" class="pull_left">To be added as text</div>
+                                            <div class="pull_left hoverBlock" style="margin-left: 5px; margin-top: -1px;">
+                                                <div class="fa_mednet fa-pencil  editBtnList" title="Edit Details"></div>
+                                                <div class="pull_left">
+                                                    <div class="fa_mednet fa-trash-o deleteIconList"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wideDIV">
+                                            <div class="addNewSectionButton pull_right" title="Add New">+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btnFooter">
+                                <div class="btnCommon">Save</div>
+                                <div class="pull_right DBp8">Dr. Yogendra Oke <span class="spanTime">7:45 PM - 8:00 PM</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-cell">
+                        <div class="cardSection">
+                            <div class="wideDIV sec_outer_header">
+                                <div class="breadCrumbLabel breadCrumbLabelActive">General Advise</div>
+                                <div class="addBtn pull_right">
+                                    <div class="pull_left"><span class="fa_mednet fa-plus"></span>Add New</div>
+                                </div>
+                            </div>
+
+                            <div class="wideDIV textareaDB">
+                                <div class="wideDIV">
+                                    <div class="labelb5" style="width: 45px;">Notes :</div>
+                                    <div class="pull_left">
+                                        <label class="selectOptionDB">
+                                                <select class="inputFocus selectDM" style="width: 112px;">
+                                                    <option value="DN">Doctors Note</option>
+                                                    <option value="DN">Note To Labs</option>
+                                                    <option value="DN">Clinical Note</option>
+                                                </select>
+                                            </label>
+                                    </div>
+                                </div>
+                                <div class="wideDIV labelb5Top itemDIV">
+                                    <textarea class="textareaDiv textDB focusTextArea" placeholder="Notes goes to here"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="btnFooter">
+                                <div class="btnCommon">Save</div>
+                                <div class="pull_right DBp8">Dr. Yogendra Oke <span class="spanTime">8:20 PM - 9:00 PM</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-cell">
+                        <div class="cardSection">
+                            <div class="wideDIV sec_outer_header">
+                                <div class="breadCrumbLabel breadCrumbLabelActive">Report View</div>
+                            </div>
+
+                            <div class="wideDIV borderBox" style="padding: 10px 10px 10px 20px; cursor: initial;">
+                                <div class="wideDIV borderBox" style="border: 1px solid #ccc;">
+                                    <div class="wideDIV col-header">
+                                        <div class="pull_left borderBox" style="width: calc(24% - 80px); padding-left: 5px;">
+                                            <div class="right_cli_search">
+                                                <input type="text" class="textshadpatient textIndent3 right_cli_searchInput" placeholder="Patient Name">
+                                                <div class="fa_mednet fa-search fa-search-custom"></div>
+                                            </div>
+                                        </div>
+                                        <div class="pull_left" style="width: calc(24% - 60px);">
+                                            <div class="right_cli_search">
+                                                <input type="text" class="textshadpatient textIndent3 right_cli_searchInput" placeholder="Requesting Doctor">
+                                                <div class="fa_mednet fa-search fa-search-custom"></div>
+                                            </div>
+                                        </div>
+                                        <div class="labelb5" style="width: 140px;">
+                                            <div class="pull_left" style="min-width:auto;max-width: calc(100% - 25px);">REQUEST DATE</div>
+                                            <div title="Descending Order" class="pull_left fa_mednet fa-caret-up caretUpDownIcon"></div>
+                                        </div>
+                                        <div class="labelb5 textEllipsis" style="width: 60px;">REP. BY</div>
+                                        <div class="labelb5 textEllipsis" style="width: 60px;">PRE. BY</div>
+                                        <div class="labelb5" style="width: 140px;">
+                                            <div class="pull_left" style="min-width:auto;max-width: calc(100% - 25px);">REQUEST DATE</div>
+                                            <div title="Descending Order" class="pull_left fa_mednet fa-caret-up caretUpDownIcon"></div>
+                                        </div>
+                                        <div class="labelb5 textEllipsis" style="width: 60px;">BILL NO.</div>
+                                        <div class="labelb5 textEllipsis" style="width: 70px;">STATUS</div>
+                                        <div class="pull_right">
+                                            <div class="labelw5b3" style="display: block; margin: 3px 3px 0px 0px;">
+                                                <div class="fa_mednet fa-arrows-h fa-edit-custom"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wideDIV overflowVh" style="max-height: calc(100vh - 170px); min-height: calc(100vh - 170px);">
+                                        <div class="wideDIV tblRowEven greyBottomBorder relative" style="background: #ddffe1; min-height: 22px;">
+                                            <div class="pull_left borderBox pointer" style="width: calc(24% - 80px); padding-left: 5px;">
+                                                <div class="wideDIV textEllipsis" title="Mrs. Krishana Agrawal">Mrs. Krishana Agrawal</div>
+                                                <div class="wideDIV darkGrayLabelLabDiag">LSHHI397006</div>
+                                            </div>
+                                            <div class="pull_left textElllipsis" style="width: calc(24% - 60px)" title="DR. PANKAJ DAWAR">DR. PANKAJ DAWAR</div>
+                                            <div class="pull_left" style="width: 140px">
+                                                <div>30-01-2020 08:14 PM</div>
+                                            </div>
+                                            <div class="pull_left textEllipsis" style="width: 60px;" title="CLINICAL BIOCHEMISTRY">CLINICAL BIOCHEMISTRY</div>
+                                            <div class="pull_left textEllipsis" style="width: 60px;" title="DR. RANJAN KUMAR">DR. RANJAN KUMAR</div>
+                                            <div class="pull_left" style="width: 140px">
+                                                <div>30-01-2020 08:14 PM</div>
+                                            </div>
+                                            <div class="pull_left textEllipsis" style="width: 60px;" title="">-</div>
+                                            <div class="pull_left textEllipsis" style="width: 70px;" title="FINALIZED">FINALIZED</div>
+                                            <div class="pull_right">
+                                                <div class="wideDIV fa_mednet fa-print closeFullWidth pointer" style="width: 30px;;color: #355c9c;" title="Print"></div>
+                                            </div>
+                                        </div>
+                                        <div class="wideDIV tblRowEven greyBottomBorder relative" style="background: #ddffe1; min-height: 22px;">
+                                            <div class="pull_left borderBox pointer" style="width: calc(24% - 80px); padding-left: 5px;">
+                                                <div class="wideDIV textEllipsis" title="Mrs. ADITYA SARASWAT">Mr. ADITYA SARASWAT</div>
+                                                <div class="wideDIV darkGrayLabelLabDiag">SR521523</div>
+                                            </div>
+                                            <div class="pull_left textElllipsis" style="width: calc(24% - 60px)" title="DR. BHASKAR NANDI">DR. BHASKAR NANDI</div>
+                                            <div class="pull_left" style="width: 140px">
+                                                <div>30-01-2020 08:14 PM</div>
+                                            </div>
+                                            <div class="pull_left textEllipsis" style="width: 60px;" title="HAEMATOLOGY">HAEMATOLOGY</div>
+                                            <div class="pull_left textEllipsis" style="width: 60px;" title="DR. RANJAN KUMAR">DR. RANJAN KUMAR</div>
+                                            <div class="pull_left" style="width: 140px">
+                                                <div>30-01-2020 08:14 PM</div>
+                                            </div>
+                                            <div class="pull_left textEllipsis" style="width: 60px;" title="">-</div>
+                                            <div class="pull_left textEllipsis" style="width: 70px;" title="FINALIZED">FINALIZED</div>
+                                            <div class="pull_right">
+                                                <div class="wideDIV fa_mednet fa-print closeFullWidth pointer" style="width: 30px;;color: #355c9c;" title="Print"></div>
+                                            </div>
+                                        </div>
+                                        <div class="wideDIV tblRowEven greyBottomBorder relative" style="background: #ddffe1; min-height: 22px;">
+                                            <div class="pull_left borderBox pointer" style="width: calc(24% - 80px); padding-left: 5px;">
+                                                <div class="wideDIV textEllipsis" title="Mrs. ANJALI SINGLA">Mrs. ANJALI SINGLA</div>
+                                                <div class="wideDIV darkGrayLabelLabDiag">SR522682</div>
+                                            </div>
+                                            <div class="pull_left textElllipsis" style="width: calc(24% - 60px)" title="DR. SUMIT NARANG">DR. SUMIT NARANG</div>
+                                            <div class="pull_left" style="width: 140px">
+                                                <div>30-01-2020 08:14 PM</div>
+                                            </div>
+                                            <div class="pull_left textEllipsis" style="width: 60px;" title="CLINICAL BIOCHEMISTRY">CLINICAL BIOCHEMISTRY</div>
+                                            <div class="pull_left textEllipsis" style="width: 60px;" title="DR. RANJAN KUMAR">DR. RANJAN KUMAR</div>
+                                            <div class="pull_left" style="width: 140px">
+                                                <div>30-01-2020 08:14 PM</div>
+                                            </div>
+                                            <div class="pull_left textEllipsis" style="width: 60px;" title="">-</div>
+                                            <div class="pull_left textEllipsis" style="width: 70px;" title="FINALIZED">FINALIZED</div>
+                                            <div class="pull_right">
+                                                <div class="wideDIV fa_mednet fa-print closeFullWidth pointer" style="width: 30px;;color: #355c9c;" title="Print"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btnFooter">
+                                <div class="btnCommon">Save</div>
+                                <div class="pull_right DBp8">Dr. Yogendra Oke <span class="spanTime">8:20 PM - 9:00 PM</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slideDrover">
+            <div class="droverBox" onclick="myFunction();">
+                <div class="fa_mednet fa-th-large thIcon"></div>
+            </div>
+            <div class="droverDiv" id="myDIV" style="display:none;">
+                <div class="sectionFavLib">
+                    <div class="tabDivTop">
+                        <div class="tabDiv">
+                            <span class="fa_mednet fa-star tabIcon" style="color:#f9c532;"></span>Plan Of Action
+                        </div>
+                    </div>
+                    <div class="mainBoxSection sb-container" ondragstart="drag(event)" draggable="true">
+                        <ul id="sortable1" class="boxSection">
+                            <li class="newSlideEC newSlideECBreak" onclick="" title="Add Blank Slide">Investigation Report</li>
+                            <li id="rvFavDIV" class="newSlideEC newSlideECBreak" onclick="" title="Add Blank Slide">Reason For Visit</li>
+                            <li class="newSlideEC" onclick="" title="Add Blank Slide">Persional Details</li>
+                            <li class="newSlideEC" onclick="" title="Add Blank Slide">Medical Histroy</li>
+                            <li class="newSlideEC" onclick="" title="Add Blank Slide">Vital</li>
+                            <li class="newSlideEC newSlideECBreak" onclick="" title="Add Blank Slide">Investigation Request</li>
+                            <li class="newSlideEC" onclick="" title="Add Blank Slide">Examination</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="libraryDivID" class="sectionFavLib" style="border-left: 1px solid #2a3035; display:none;">
+                    <div class="tabDivTop">
+                        <div class="tabDiv"><span class="fa_mednet fa-credit-card  tabIcon"></span>Library</div>
+                    </div>
+                    <div class="mainBoxSection sb-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <ul id="sortable2" class="boxSection">
+                            <li id="constLib1DIV" class="newSlideEC newSlideECBreak" onclick="" title="Add Blank Slide">Investigation Report</li>
+                            <li id="constLib2DIV" class="newSlideEC" onclick="" title="Add Blank Slide">Reason For Visit</li>
+                            <li id="constLib3DIV" class="newSlideEC" onclick="" title="Add Blank Slide">Persional Details</li>
+                            <li class="newSlideEC" onclick="" title="Add Blank Slide">Medical Histroy</li>
+                            <li class="newSlideEC" onclick="" title="Add Blank Slide">Vital</li>
+                            <li class="newSlideEC newSlideECBreak" onclick="" title="Add Blank Slide">Investigation Request</li>
+                            <li class="newSlideEC" onclick="" title="Add Blank Slide">Examination</li>
+                            <li class="newSlideEC" onclick="" title="Add Blank Slide">Blank Card 8</li>
+                            <li class="newSlideECinvDtlDivMainGroup" onclick="" title="Add Blank Slide">Blank Card 9</li>
+                            <li class="newSlideEC" onclick="" title="Add Blank Slide">Blank Card 10</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slideDroverLeft">
+            <div class="droverBoxLeft" onclick="functionDroverLeft();">
+                <div class="fa_mednet fa-home thIcon"></div>
+            </div>
+            <div class="droverDivLeft" id="droverDivLeft" style="display:none;">
+                <div class="wideDIV">
+                    <div class="wideDIV borderBox patientHeaderBand patientHeaderBandDB" style="border-top: 0px none; padding: 7px 10px;">
+                        <div class="pull_left" style="width:147px;">
+                            <div class="add_ico_ipad right_cli_search">
+                                <input type="text" id="mrnSearch" class="textshadpatient textIndent3 right_cli_searchInput right_cli_searchInputGrey" placeholder="Search MRN" name="text">
+                                <div class="fa_mednet fa-search fa-search-custom"></div>
+                            </div>
+                        </div>
+
+                        <div class="pull_left" style="width:300px;">
+                            <div class="add_ico_ipad right_cli_search">
+                                <input type="text" id="patientName" class="textshadpatient textIndent3 right_cli_searchInput right_cli_searchInputGrey" placeholder="Search Or Register Patient" name="text">
+                                <div class="fa_mednet fa-search fa-search-custom"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wideDIV">
+                    <div class="wideDIV lightgrayBackground borderBox labelb5w10Padding">
+                        <div class="labelb5Top">Date</div>
+                        <div id="" class="pull_left">
+                            <div class="labelw5">
+                                <input type="text" style="background-position:74px !important;" placeholder="DD-MM-YYYY" readonly="readonly" class="textshadpatient mednetDateField hasDatepicker" name="text">
+                            </div>
+                            <div class="labelb5"> - </div>
+                            <div class="labelw5">
+                                <input type="text" style="background-position:74px !important;" placeholder="DD-MM-YYYY" readonly="readonly" class="textshadpatient mednetDateField hasDatepicker" name="text">
+                            </div>
+                        </div>
+                        <div class="pull_right">
+                            <div class="pull_left">
+                                <div class="labelb5">Dept.</div>
+                                <div class="pull_left" style="margin-left: 5px;">
+                                    <label class="selectOptionDB">
+                                            <select class="inputFocus selectDM" style="width: 140px;">
+                                                <option value="Select">--Select--</option>
+                                                <option value="OPHTHALMOLOGY">OPHTHALMOLOGY</option>
+                                                <option value="CARDIOLOGY">CARDIOLOGY</option>
+                                                <option value="ENT">ENT</option>
+                                                <option value="GYNAECOLOGY">GYNAECOLOGY</option>
+                                            </select>
+                                        </label>
+                                </div>
+                            </div>
+                            <div style="margin-left: 10px;" class="pull_left">
+                                <div style="" class="pull_left">
+                                    <div class="pull_left fancyRadioBtn">
+                                        <label class="fancyDBRadioLeft">
+                                                <input type="radio" name="DBRadio" checked="true">
+                                                <span>All</span>
+                                            </label>
+                                        <label class="fancyDBRadioRight">
+                                                <input type="radio" name="DBRadio">
+                                                <span>Blocked Appt.</span>
+                                            </label>
+                                        <label class="fancyDBRadioRight">
+                                                <input type="radio" name="DBRadio">
+                                                <span>Registered</span>
+                                            </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pull_left" style="margin-left: 10px;">
+                                <div class="labelb5">Assistant</div>
+                                <div class="pull_left" style="margin-left: 5px;">
+                                    <label class="selectOptionDB">
+                                            <select class="inputFocus selectDM" style="width: 140px;">
+                                                <option value="Select">--Select--</option>
+                                                <option value="MUKESH GARG ">MUKESH GARG</option>
+                                                <option value="RAVI BHATIA">RAVI BHATIA</option>
+                                                <option value="ENSANJAY SINGH NEGIT">SANJAY SINGH NEGI</option>
+                                            </select>
+                                        </label>
+                                </div>
+                            </div>
+                            <div class="pull_left" style="margin-left: 10px;">
+                                <div class="chkOuterBoxLabDiag labelb3Top" title="Wating">
+                                    <input id="LabsPendingTabRequisitionNotAccepted" class="pointer labDiagInpChk" name="" type="checkbox" style="display:none;">
+                                    <label for="LabsPendingTabRequisitionNotAccepted" class="pointer fa_mednet fa-check labelIcoCustomLabDiag" style="background: #fce4ec;border: 1px solid #ccc;"></label>
+                                </div>
+                                <div class="chkOuterBoxLabDiag labelb3Top" title="Being">
+                                    <input id="Being" class="pointer labDiagInpChk" name="" type="checkbox" style="display:none;">
+                                    <label for="Being" class="pointer fa_mednet fa-check labelIcoCustomLabDiag" style="background: #fff59d;border: 1px solid #ccc;"></label>
+                                </div>
+                                <div class="chkOuterBoxLabDiag labelb3Top" title="Exam Completed">
+                                    <input id="ExamComplete" class="pointer labDiagInpChk" name="" type="checkbox" style="display:none;">
+                                    <label for="ExamComplete" class="pointer fa_mednet fa-check labelIcoCustomLabDiag" style="background: #ffffdd;border: 1px solid #ccc;"></label>
+                                </div>
+                            </div>
+                            <div class="pull_left" style="margin-left: 10px;">
+                                <div class="labelb5">Doctors</div>
+                                <div class="pull_left" style="margin-left: 5px;">
+                                    <label class="selectOptionDB">
+                                            <select class="inputFocus selectDM" style="width: 140px;">
+                                                <option value="Select">--Select--</option>
+                                                <option value="Dr. Yogendra Oke">Dr. Yogendra Oke</option>
+                                                <option value="Dr. PRATIBHA MALIK">Dr. PRATIBHA MALIK</option>
+                                                <option value="Dr. RAKESH GUPTA">Dr. RAKESH GUPTA</option>
+                                            </select>
+                                        </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wideDIV">
+                    <div class="col-header wideDIV" style="position: relative;">
+                        <div style="width: 25%;padding-left: 10px;" class="pull_left borderBox">
+                            <div class="wideDIV">
+                                <input type="text" placeholder="Patient Name" name="text" class="textshadpatient textIndent3 right_cli_searchInput" style="width: calc(100% - 10px);">
+                                <div class="fa_mednet fa-search fa-search-custom"></div>
+                            </div>
+                        </div>
+                        <div style="width: 14%;" class="labelb5">DATE</div>
+                        <div style="width: 12%;" class="labelb5">CATEGORY</div>
+                        <div style="width: 12%;" class="labelb5">STATUS</div>
+                        <div style="width: 12%;" class="labelb5">DOCTORS</div>
+                        <div style="width: 12%;" class="labelb5">TOKEN</div>
+                    </div>
+                </div>
+                <div class="wideDIV overflowVh" style="min-height: calc(100vh - 180px);max-height: calc(100vh - 180px);">
+                    <div class="tblRowEven relative" style="padding: 2px !important; background-color: #ddffe1;">
+                        <div class="pull_left borderBox pointer" style="padding-left: 10px; width: 25%;">
+                            <div class="wideDIV">Mr. Sanjay Sharma</div>
+                            <div class="wideDIV" style="font-size: 0.8em;color: #777;">SSH28280819</div>
+                        </div>
+                        <div style="width: 14%;" class="labelb5Top">
+                            <div class="wideDIV">10-02-2020 12:10 PM</div>
+                            <div class="wideDIV" style="font-size: 0.8em;color: #777;"></div>
+                        </div>
+                        <div style="width: 12%;" class="labelb5Top">PAYING</div>
+                        <div style="width: 12%;" class="labelb5Top">REGISTERED</div>
+                        <div style="width: 12%;" class="labelb5Top">
+                            <div class="wideDIV">Dr. Yogendra Oke</div>
+                            <div class="wideDIV" style="font-size: 0.8em;color: #777;">OPHTHALMOLOGY</div>
+                        </div>
+                        <div style="width: 12%;" class="labelb5Top">C-221</div>
+                    </div>
+                    <div class="tblRowEven relative pointer" style="padding: 2px !important; background-color: #fce4ec;">
+                        <div class="pull_left borderBox" style="padding-left: 10px; width: 25%;">
+                            <div class="wideDIV">Mrs. Priyanka Sagar Bhoite</div>
+                            <div class="wideDIV" style="font-size: 0.8em;color: #777;">SSH28280819</div>
+                        </div>
+                        <div style="width: 14%;" class="labelb5Top">
+                            <div class="wideDIV">10-02-2020 12:10 PM</div>
+                            <div class="wideDIV" style="font-size: 0.8em;color: #777;"></div>
+                        </div>
+                        <div style="width: 12%;" class="labelb5Top">PAYING</div>
+                        <div style="width: 12%;" class="labelb5Top">REGISTERED</div>
+                        <div style="width: 12%;" class="labelb5Top">
+                            <div class="wideDIV">Dr. Yogendra Oke</div>
+                            <div class="wideDIV" style="font-size: 0.8em;color: #777;">OPHTHALMOLOGY</div>
+                        </div>
+                        <div style="width: 12%;" class="labelb5Top">C-222</div>
+                    </div>
+                    <div class="tblRowEven relative pointer" style="padding: 2px !important">
+                        <div class="pull_left borderBox" style="padding-left: 10px; width: 25%;">
+                            <div class="wideDIV">Mr. Akshay Deshmukh</div>
+                            <div class="wideDIV" style="font-size: 0.8em;color: #777;">SSH28280819</div>
+                        </div>
+                        <div style="width: 14%;" class="labelb5Top">
+                            <div class="wideDIV">10-02-2020 12:10 PM</div>
+                            <div class="wideDIV" style="font-size: 0.8em;color: #777;">New Complaints</div>
+                        </div>
+                        <div style="width: 8%;" class="labelb5Top">PAYING</div>
+                        <div title="New Patient" style="background: green none repeat scroll 0px 0px; border-radius: 3px; width: 15px; margin-top: 5px; margin-right: 35px;" class="chkOuterBoxLabDiag">
+                            <label style="color: white; font-weight: bold; font-family: arial; font-size: 9px; text-align: center; width: 100%;" class="fa_mednet labelIcoCustomLabDiag" for="LabsPendingTabRequisitionNotAccepted">N</label>
+                        </div>
+                        <div style="width: 12%;" class="labelb5Top">REGISTERED</div>
+                        <div style="width: 12%;" class="labelb5Top">
+                            <div class="wideDIV">Dr. Yogendra Oke</div>
+                            <div class="wideDIV" style="font-size: 0.8em;color: #777;">OPHTHALMOLOGY</div>
+                        </div>
+                        <div style="width: 12%;" class="labelb5Top">C-223</div>
+                    </div>
+                    <div class="tblRowEven relative" style="padding: 2px !important; background-color: #ffffdd;">
+                        <div class="pull_left borderBox pointer" style="padding-left: 10px; width: 25%;">
+                            <div class="wideDIV">Mr. Avinash Shende</div>
+                            <div class="wideDIV" style="font-size: 0.8em;color: #777;">SSH28280819</div>
+                        </div>
+                        <div style="width: 14%;" class="labelb5Top">
+                            <div class="wideDIV">10-02-2020 12:10 PM</div>
+                            <div class="wideDIV" style="font-size: 0.8em;color: #777;"></div>
+                        </div>
+                        <div style="width: 12%;" class="labelb5Top">PAYING</div>
+                        <div style="width: 12%;" class="labelb5Top">REGISTERED</div>
+                        <div style="width: 12%;" class="labelb5Top">
+                            <div class="wideDIV">Dr. Yogendra Oke</div>
+                            <div class="wideDIV" style="font-size: 0.8em;color: #777;">OPHTHALMOLOGY</div>
+                        </div>
+                        <div style="width: 12%;" class="labelb5Top">C-224</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    function functionDroverLeft() {
+        var x = document.getElementById("droverDivLeft");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+
+    function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            var displayValue = document.getElementById('libraryDivID').style.display;
+            if (displayValue == 'none') {
+                document.getElementById('libraryDivID').style.display = "block";
+            } else {
+                document.getElementById('libraryDivID').style.display = "none";
+                x.style.display = "none";
+            }
+        }
+    }
+
+    $(".sb-container").scrollBox();
+
+    $(function() {
+        $("#sortable1").sortable({
+            connectWith: "#sortable2",
+            start: function(e, ui) {
+                ui.placeholder.height(ui.item.height());
+                ui.placeholder.css('display', 'none');
+            }
+        }).disableSelection();
+
+        $("#sortable2").droppable({
+            over: function() {
+                $("#dragtarget , #rvFavDIV").addClass("dropActive")
+            },
+            accept: "#dragtarget , #rvFavDIV",
+        });
+    });
+
+    $('#constLib1DIV').click(function() {
+        var text = $(this).text();
+        $("#sortable1").prepend('<li id="dragtarget" class="newSlideEC newSlideECBreak">' + 'Investigation Report' + '</li>');
+    });
+
+    $('#constLib2DIV').click(function() {
+        var text = $(this).text();
+        $("#sortable1").prepend('<li class="newSlideEC">' + 'Reason For Visit' + '</li>');
+    });
+
+    $('#constLib3DIV').click(function() {
+        var text = $(this).text();
+        $("#sortable1").prepend('<li class="newSlideEC">' + 'Persional Details' + '</li>');
+    });
+
+    function detailsContentBPDIV() {
+        var displayDetails = document.getElementById('ContentBPDIV').style.display;
+        if (displayDetails == 'none') {
+            document.getElementById("ContentBPDIV").style.display = "block";
+        } else {
+            document.getElementById("ContentBPDIV").style.display = "none";
+        }
+    }
+
+    function addSymptToPatient() {
+        document.getElementById('symptomPatientDIV').style.display = 'block';
+    }
+
+    function removeSymptToPatient() {
+        document.getElementById('symptomPatientDIV').style.display = 'none';
+    }
+
+    function removeSymptToPatientRight() {
+        document.getElementById('symptomPatientRightDIV').style.display = 'none';
+    }
+
+    function recentiUti() {
+        document.getElementById('showRecentUti').style.display = 'block';
+    }
+
+    function hiderecentiUti() {
+        document.getElementById('showRecentUti').style.display = 'none';
+    }
+
+    function closerecentiUti() {
+        document.getElementById('hiderecentiUti').style.display = 'none';
+    }
+
+
+    function selectall(source) {
+        checkboxes = document.getElementsByName('foo');
+        for (var i = 0, n = checkboxes.length; i < n; i++) {
+            checkboxes[i].checked = source.checked;
+        }
+    }
+
+    function deleteList() {
+        document.getElementById('detailsListDiv1').style.display = 'none';
+    }
+
+    var header = document.getElementById("selectedBtnMain");
+    var btns = header.getElementsByClassName("deselectedBtnFlag");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("selectedBtnFlag");
+            current[0].className = current[0].className.replace(" selectedBtnFlag", "");
+            this.className += " selectedBtnFlag";
+        });
+    }
+
+    var header = document.getElementById("eyeSpanMain");
+    var btns = header.getElementsByClassName("eyeSpanInActive");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("eyeSpanActive");
+            current[0].className = current[0].className.replace("eyeSpanActive", "");
+            this.className += "eyeSpanActive";
+        });
+    }
+
+    $(function() {
+        $("#datepicker").datepicker();
+    });
+
+    /* Scroll Script */
+
+    // init Flickity
+    var $gallery = $('.gallery').flickity({
+        prevNextButtons: true,
+        pageDots: false
+    });
+    // Flickity instance
+    var flkty = $gallery.data('flickity');
+    // elements
+    var $invDtlDivMainGroup = $('.invDtlDivMain');
+    var $invDtlDiv = $invDtlDivMainGroup.find('.invDtlDivOuter');
+
+    // update selected invDtlDivOuter to invDtlDivOuterActive
+    $gallery.on('select.flickity', function() {
+        $invDtlDiv.filter('.invDtlDivOuterActive')
+            .removeClass('invDtlDivOuterActive');
+        $invDtlDiv.eq(flkty.selectedIndex)
+            .addClass('invDtlDivOuterActive');
+    });
+
+    // select cell on invDtlDivOuter click
+    $invDtlDivMainGroup.on('click', '.invDtlDivOuter', function() {
+        var index = $(this).index();
+        $gallery.flickity('select', index);
+    });
+
+    /*End */
+</script>
+
+<style>
+    * external css: flickity.css */ * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .flickity-page-dots {
+        display: none;
+    }
+    
+    #sortable1 li,
+    #sortable2 li {
+        background: #f9f9f9 none repeat scroll 0 0;
+        border-radius: 3px;
+        cursor: pointer;
+        float: left;
+        height: 60px;
+        margin-top: 15px;
+        padding: 24px 5px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #sortable1 li:hover {
+        background: #dcdcdc;
+    }
+    
+    #sortable2 li:hover {
+        background: #dcdcdc;
+    }
+    /* Prev & Next */
+    
+    .previous {
+        background: hsla(0, 0%, 100%, 0.75) none repeat scroll 0 0 !important;
+        border: medium none;
+        border-radius: 50% !important;
+        cursor: pointer !important;
+        height: 35px;
+        left: calc(30% - 287px) !important;
+        margin: 0 !important;
+        opacity: 0.7;
+        position: absolute;
+        top: calc(50vh - 17.5px);
+        width: 35px;
+    }
+    
+    .next {
+        background: hsla(0, 0%, 100%, 0.75) none repeat scroll 0 0 !important;
+        border: medium none;
+        border-radius: 50% !important;
+        cursor: pointer !important;
+        height: 35px;
+        margin: 0 !important;
+        opacity: 0.7;
+        position: absolute;
+        right: -38px !important;
+        top: calc(50vh - 17.5px);
+        width: 35px;
+    }
+    
+    .previous:hover {
+        background: #869791 !important;
+        color: #ffffff;
+    }
+    
+    .next:hover {
+        background: #869791 !important;
+        color: #ffffff;
+    }
+    
+    .mednetDateField {
+        background-color: #fff;
+        background-image: url("images/icon-calendar.png");
+        background-position: 80px center;
+        background-repeat: no-repeat;
+        font-size: 11px;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-top: 0;
+        text-indent: 3px;
+        width: 90px;
+    }
+    
+    .dropActive {
+        height: 60px !important;
+        left: 189px !important;
+        top: 42.4px !important;
+        z-index: -1 !important;
+    }
+    
+    @media only screen and (max-width: 800px) {
+        .profilePicture {
+            height: 70px;
+            margin-left: 55px;
+            width: 70px;
+        }
+        .patientDtl {
+            margin: 0px;
+            padding-bottom: 8px;
+            padding-top: 10px;
+            width: calc(100% - -11px);
+        }
+        .details_cart {
+            width: calc(25% - -45px) !important;
+        }
+        .btnCommonSmall {
+            margin-left: 2px;
+            padding: 0 6px;
+        }
+        .gallery-cell {
+            height: calc(100vh - 233px) !important;
+        }
+        .flickity-viewport {
+            height: calc(100vh - 35px) !important;
+        }
+        #sortable1 li,
+        #sortable2 li {
+            margin-left: -5px !important;
+        }
+        .previous {
+            left: calc(30% - 180px) !important;
+        }
+    }
+</style>
